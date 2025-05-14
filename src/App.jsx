@@ -1,11 +1,12 @@
 import React from 'react';
-import IncolorsSocialSection from './components/IncolorsSocialSection';
+import Hero from './components/Hero';
 import ProductOptions from './components/ProductOptions';
+import IncolorsSocialSection from './components/IncolorsSocialSection';
 
 export default function App() {
   return (
     <div>
-      <h1>Incolors Website</h1>
+      <Hero />
       <ProductOptions />
       <IncolorsSocialSection />
     </div>

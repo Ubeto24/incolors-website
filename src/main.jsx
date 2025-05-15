@@ -1,6 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+import App from './App.jsx';
+import Catalog from './pages/Catalog.jsx';
+import NotFound404 from './pages/NotFound404.jsx';
+
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+
+// Componente que maneja las rutas con animaciones
+function AnimatedRoutes() {
+  const location = useLocation();
+
+  return (
+    <AnimatePresence mode="wait">
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<App />} />
+        <Route path="/catalogo" element={<Catalog />} />
+        <Route path="*" element={<NotFound404 />} />
+      </Routes>
+    </AnimatePresence>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <AnimatedRoutes />
+    </BrowserRouter>
+  </React.StrictMode>
+);

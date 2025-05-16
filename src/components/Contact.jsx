@@ -48,6 +48,7 @@ export default function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-recaptcha="true"
             netlify-honeypot="bot-field"
             onSubmit={handleSubmit}
             className="space-y-4"
@@ -79,6 +80,9 @@ export default function Contact() {
               required
               className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none placeholder-gray-500"
             />
+
+            <div data-netlify-recaptcha="true"></div>
+
             <button
               type="submit"
               className="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition"

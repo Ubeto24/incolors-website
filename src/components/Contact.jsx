@@ -1,7 +1,24 @@
 // src/components/Contact.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Contact() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => navigate('/gracias'))
+      .catch((error) => alert('Hubo un error al enviar el mensaje: ' + error));
+  };
+
   return (
     <section id="contact" className="py-20 bg-gradient-to-r from-indigo-500 to-purple-600 text-white">
       <div className="container mx-auto px-6">
@@ -27,8 +44,19 @@ export default function Contact() {
           </div>
 
           {/* Formulario de contacto */}
-          <form name="contact" method="POST" data-netlify="true" className="space-y-4">
+          <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
+            className="space-y-4"
+          >
             <input type="hidden" name="form-name" value="contact" />
+            <div hidden>
+              <input name="bot-field" />
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <input
                 type="text"

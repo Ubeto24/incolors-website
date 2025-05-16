@@ -17,11 +17,19 @@
       referrerpolicy="no-referrer"
     />
 
-    <!-- ✅ reCAPTCHA v2 Invisible -->
+    <!-- ✅ Google reCAPTCHA v2 Invisible -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- ✅ Formulario fantasma para Netlify Forms -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

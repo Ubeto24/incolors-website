@@ -17,7 +17,7 @@ export default function Portfolio() {
       image: 'https://i.ibb.co/xyz123/flor-de-aragua.png',
     },
     {
-      title: 'Tijeraso',
+      title: 'Tijerazo',
       image: 'https://i.ibb.co/xyz123/tijeraso.png',
     },
     {

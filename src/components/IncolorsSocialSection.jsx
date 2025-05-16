@@ -1,4 +1,7 @@
+// src/components/IncolorsSocialSection.jsx
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function IncolorsSocialSection() {
   return (
@@ -17,10 +20,10 @@ export default function IncolorsSocialSection() {
             href="https://instagram.com/incolors.vzla"
             target="_blank"
             rel="noreferrer"
-            className="w-14 h-14 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center text-white text-xl hover:scale-105 transition"
+            className="w-14 h-14 rounded-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 flex items-center justify-center text-white text-2xl hover:scale-105 transition"
             aria-label="Instagram"
           >
-            <i className="fab fa-instagram"></i>
+            <FontAwesomeIcon icon={faInstagram} />
           </a>
 
           {/* WhatsApp */}
@@ -28,10 +31,10 @@ export default function IncolorsSocialSection() {
             href="https://wa.me/+584241888534"
             target="_blank"
             rel="noreferrer"
-            className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white text-xl hover:scale-105 transition"
+            className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white text-2xl hover:scale-105 transition"
             aria-label="WhatsApp"
           >
-            <i className="fab fa-whatsapp"></i>
+            <FontAwesomeIcon icon={faWhatsapp} />
           </a>
 
           {/* TikTok */}
@@ -39,10 +42,10 @@ export default function IncolorsSocialSection() {
             href="https://tiktok.com/@incolors.vzla"
             target="_blank"
             rel="noreferrer"
-            className="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-xl hover:scale-105 transition"
+            className="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-2xl hover:scale-105 transition"
             aria-label="TikTok"
           >
-            <i className="fab fa-tiktok"></i>
+            <FontAwesomeIcon icon={faTiktok} />
           </a>
         </div>
       </div>

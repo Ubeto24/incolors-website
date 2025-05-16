@@ -1,14 +1,11 @@
-// Importación principal de React
+// src/components/Services.jsx
 import React from 'react';
 
-// Componente funcional Services
 export default function Services() {
   return (
-    // Sección identificada como "services" con padding y fondo blanco
     <section id="services" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        
-        {/* Encabezado central con título y descripción */}
+        {/* Título y descripción de la sección */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             Nuestros <span className="text-indigo-600">Servicios</span>
@@ -19,9 +16,8 @@ export default function Services() {
           </p>
         </div>
 
-        {/* Grid responsiva de servicios: 1 columna en móvil, 2 en tablet, 3 en desktop */}
+        {/* Grid de servicios responsivo */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {/* Mapeo del array de servicios para renderizarlos dinámicamente */}
           {[
             {
               icon: "fas fa-palette",
@@ -58,8 +54,8 @@ export default function Services() {
               key={index}
               className="bg-gray-50 rounded-xl p-8 shadow-lg hover:shadow-xl transition duration-300 service-card"
             >
-              {/* Ícono dentro de un círculo degradado centrado */}
-              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-2xl mb-6 mx-auto service-icon">
+              {/* Círculo con ícono centrado */}
+              <div className="w-16 h-16 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white text-3xl mb-6 mx-auto service-icon">
                 <i className={service.icon}></i>
               </div>
 

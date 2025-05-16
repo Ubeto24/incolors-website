@@ -1,5 +1,5 @@
-// src/App.jsx
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import IncolorsSocialSection from './components/IncolorsSocialSection';
+import Gracias from './pages/Gracias'; // ✅ Importa tu componente de agradecimiento
 import { motion } from 'framer-motion';
 
 export default function App() {
@@ -20,18 +21,29 @@ export default function App() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <Navbar />
-      <Hero />
-      <Services />
-      <ProductOptions />
-      <Portfolio />
-      <About />
-      <Testimonials />
-      <Contact />
-      <IncolorsSocialSection />
-      <Footer />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Hero />
+              <Services />
+              <ProductOptions />
+              <Portfolio />
+              <About />
+              <Testimonials />
+              <Contact />
+              <IncolorsSocialSection />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/gracias" element={<Gracias />} />
+      </Routes>
 
-      {/* ✅ Botón flotante WhatsApp */}
+      {/* Botones sociales flotantes */}
+      {/* WhatsApp */}
       <a
         href="https://wa.me/+584241888534"
         target="_blank"
@@ -45,7 +57,7 @@ export default function App() {
         </span>
       </a>
 
-      {/* ✅ Botón flotante Instagram */}
+      {/* Instagram */}
       <a
         href="https://instagram.com/incolors.vzla"
         target="_blank"
@@ -59,7 +71,7 @@ export default function App() {
         </span>
       </a>
 
-      {/* ✅ Botón flotante TikTok */}
+      {/* TikTok */}
       <a
         href="https://www.tiktok.com/@incolors.vzla"
         target="_blank"

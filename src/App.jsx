@@ -11,9 +11,9 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import IncolorsSocialSection from './components/IncolorsSocialSection';
 import Gracias from './pages/Gracias';
+import Privacidad from './pages/Privacidad'; // ✅ NUEVO: Aviso de privacidad
 import { motion } from 'framer-motion';
 
-// ✅ Importamos el ícono como componente SVG desde FontAwesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
@@ -44,9 +44,10 @@ export default function App() {
           }
         />
         <Route path="/gracias" element={<Gracias />} />
+        <Route path="/privacidad" element={<Privacidad />} /> {/* ✅ Ruta de privacidad */}
       </Routes>
 
-      {/* ✅ Botón flotante de WhatsApp con SVG FontAwesome */}
+      {/* Botón flotante de WhatsApp */}
       <a
         href="https://wa.me/+584241888534"
         target="_blank"

@@ -39,7 +39,7 @@ export default function IncolorsSocialSection() {
 
           {/* TikTok */}
           <a
-            href="https://tiktok.com/@incolors.vzla"
+            href="https://www.tiktok.com/@incolors.ve?_t=ZM-8wQzWOUrk7L&_r=1"
             target="_blank"
             rel="noreferrer"
             className="w-14 h-14 rounded-full bg-black flex items-center justify-center text-white text-2xl hover:scale-105 transition"

@@ -1,3 +1,4 @@
+// src/App.jsx
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
@@ -11,8 +12,9 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import IncolorsSocialSection from './components/IncolorsSocialSection';
 import Gracias from './pages/Gracias';
-import Privacidad from './pages/Privacidad'; // ✅ NUEVO: Aviso de privacidad
+import Privacidad from './pages/Privacidad';
 import { motion } from 'framer-motion';
+import AnimatedLanguageWrapper from './components/AnimatedLanguageWrapper'; // ✅ NUEVO
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -25,27 +27,29 @@ export default function App() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navbar />
-              <Hero />
-              <Services />
-              <ProductOptions />
-              <Portfolio />
-              <About />
-              <Testimonials />
-              <Contact />
-              <IncolorsSocialSection />
-              <Footer />
-            </>
-          }
-        />
-        <Route path="/gracias" element={<Gracias />} />
-        <Route path="/privacidad" element={<Privacidad />} /> {/* ✅ Ruta de privacidad */}
-      </Routes>
+      <AnimatedLanguageWrapper>
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Hero />
+                <Services />
+                <ProductOptions />
+                <Portfolio />
+                <About />
+                <Testimonials />
+                <Contact />
+                <IncolorsSocialSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/gracias" element={<Gracias />} />
+          <Route path="/privacidad" element={<Privacidad />} />
+        </Routes>
+      </AnimatedLanguageWrapper>
 
       {/* Botón flotante de WhatsApp */}
       <a

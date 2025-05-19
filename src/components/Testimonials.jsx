@@ -1,29 +1,29 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 export default function Testimonials() {
+  const { t } = useTranslation();
+
   const testimonials = [
     {
       name: 'Mariana De Sousa',
-      title: 'Estudiante',
+      title: t('testimonials.mariana.title'),
+      comment: t('testimonials.mariana.comment'),
       image: 'https://randomuser.me/api/portraits/women/43.jpg',
-      comment:
-        'Incolors me ayudó en el desarrollo de mi tesis. Permitiendo estudiar su línea de reciclaje de plástico PET utilizado en sus procesos de impresión 3D.',
       rating: 5
     },
     {
       name: 'Carlos Martínez',
-      title: 'Director, TechSolutions',
+      title: t('testimonials.carlos.title'),
+      comment: t('testimonials.carlos.comment'),
       image: 'https://randomuser.me/api/portraits/men/32.jpg',
-      comment:
-        'El equipo de Incolors entendió perfectamente nuestras necesidades y entregó un sitio web corporativo que superó todas nuestras expectativas.',
       rating: 5
     },
     {
       name: 'Laura Fernández',
-      title: 'Gerente, TaskMaster',
+      title: t('testimonials.laura.title'),
+      comment: t('testimonials.laura.comment'),
       image: 'https://randomuser.me/api/portraits/women/65.jpg',
-      comment:
-        'La aplicación móvil que desarrolló Incolors ha sido fundamental para mejorar la productividad de nuestro equipo. ¡Excelente trabajo!',
       rating: 4.5
     }
   ];
@@ -33,11 +33,11 @@ export default function Testimonials() {
       <div className="container mx-auto px-6 sm:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Lo que dicen <span className="text-indigo-600">nuestros clientes</span>
+            {t('testimonials.title')} <span className="text-indigo-600">{t('testimonials.highlight')}</span>
           </h2>
           <div className="w-20 h-1 bg-indigo-600 mx-auto mb-6"></div>
           <p className="text-gray-600 max-w-2xl mx-auto text-base md:text-lg">
-            Testimonios reales de empresas que han confiado en nosotros para sus proyectos digitales.
+            {t('testimonials.description')}
           </p>
         </div>
 

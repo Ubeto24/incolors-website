@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
 
 const products = [
   {
@@ -96,6 +97,7 @@ const products = [
 ];
 
 const Catalog = () => {
+  const { t } = useTranslation();
   const [selectedCategory, setSelectedCategory] = useState('all');
   const [currentPage, setCurrentPage] = useState(1);
   const productsPerPage = 9;
@@ -127,16 +129,16 @@ const Catalog = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Catálogo de <span className="text-indigo-600">Productos</span>
+            {t('catalog.title')} <span className="text-indigo-600">{t('catalog.highlight')}</span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-6">
-            Explora nuestra variedad de productos por categoría.
+            {t('catalog.subtitle')}
           </p>
           <a
             href="/"
             className="inline-block bg-indigo-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-indigo-700 transition"
           >
-            Volver al inicio
+            {t('catalog.back_home')}
           </a>
         </div>
 
@@ -151,7 +153,7 @@ const Catalog = () => {
                   : 'bg-white border border-gray-300 text-gray-700 hover:bg-gray-100'
               }`}
             >
-              {category.charAt(0).toUpperCase() + category.slice(1)}
+              {category === 'all' ? t('catalog.all') : category}
             </button>
           ))}
         </div>
@@ -180,14 +182,14 @@ const Catalog = () => {
               className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
               disabled={currentPage === 1}
             >
-              Anterior
+              {t('catalog.prev')}
             </button>
             <button
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               className="px-4 py-2 bg-gray-200 rounded hover:bg-gray-300"
               disabled={currentPage === totalPages}
             >
-              Siguiente
+              {t('catalog.next')}
             </button>
           </div>
         )}

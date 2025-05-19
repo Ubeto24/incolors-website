@@ -6,8 +6,11 @@ import './index.css';
 import App from './App.jsx';
 import Catalog from './pages/Catalog.jsx';
 import Gracias from './pages/Gracias.jsx';
-import Privacidad from './pages/Privacidad.jsx'; // ✅ Añadir import
+import Privacidad from './pages/Privacidad.jsx';
 import NotFound404 from './pages/NotFound404.jsx';
+
+// ✅ Importa configuración de idiomas
+import './i18n/i18n.js';
 
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -22,7 +25,7 @@ function AnimatedRoutes() {
         <Route path="/" element={<App />} />
         <Route path="/catalogo" element={<Catalog />} />
         <Route path="/gracias" element={<Gracias />} />
-        <Route path="/privacidad" element={<Privacidad />} /> {/* ✅ Agregado */}
+        <Route path="/privacidad" element={<Privacidad />} />
         <Route path="*" element={<NotFound404 />} />
       </Routes>
     </AnimatePresence>

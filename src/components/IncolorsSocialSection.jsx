@@ -1,21 +1,22 @@
-// src/components/IncolorsSocialSection.jsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function IncolorsSocialSection() {
+  const { t } = useTranslation();
+
   return (
     <section className="py-20 bg-white text-center">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
-          Síguenos en <span className="text-indigo-600">Redes Sociales</span>
+          {t('social.follow_us')} <span className="text-indigo-600">{t('social.on_social')}</span>
         </h2>
         <p className="text-gray-600 max-w-xl mx-auto mt-4">
-          Mantente conectado con nuestras últimas novedades, lanzamientos y promociones exclusivas.
+          {t('social.description')}
         </p>
 
         <div className="flex justify-center space-x-6 mt-8">
-          {/* Instagram */}
           <a
             href="https://instagram.com/incolors.vzla"
             target="_blank"
@@ -26,7 +27,6 @@ export default function IncolorsSocialSection() {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
 
-          {/* WhatsApp */}
           <a
             href="https://wa.me/+584241888534"
             target="_blank"
@@ -37,7 +37,6 @@ export default function IncolorsSocialSection() {
             <FontAwesomeIcon icon={faWhatsapp} />
           </a>
 
-          {/* TikTok */}
           <a
             href="https://www.tiktok.com/@incolors.ve?_t=ZM-8wQzWOUrk7L&_r=1"
             target="_blank"

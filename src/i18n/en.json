@@ -1,0 +1,136 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "about": "About Us",
+    "contact": "Contact",
+    "catalog": "Catalog"
+  },
+  "hero": {
+    "title": "We boost brands with ",
+    "highlight": "creativity",
+    "subtitle": "We design and produce corporate and promotional products that connect with your customers and elevate your brand. Your creative partner you can trust.",
+    "contact_button": "Contact Us",
+    "portfolio_button": "See Work"
+  },
+  "products": {
+    "section_title": "Featured Products",
+    "section_description": "Connect with your customers through functional and memorable promotional products. Discover our totebags, lanyards, caps, powerbanks, mugs, and branded wristbands.",
+    "catalog_button": "See full catalog",
+    "totebag": {
+      "title": "Corporate Totebag",
+      "description": "Tote bags personalized with your logo, ideal for events and promotional kits."
+    },
+    "lanyard": {
+      "title": "Corporate Lanyard",
+      "description": "Badge holders with custom design for internal use and events."
+    },
+    "cap": {
+      "title": "Promotional Caps",
+      "description": "Caps with embroidery or sublimation of your company logo."
+    },
+    "powerbank": {
+      "title": "Custom Powerbank",
+      "description": "Portable batteries with your brand, useful as corporate gifts."
+    },
+    "mug": {
+      "title": "Corporate Mug",
+      "description": "Custom mugs ideal for internal branding or business gifts."
+    },
+    "bracelet": {
+      "title": "Corporate Wristband",
+      "description": "Elastic wristbands personalized with your company’s name or logo."
+    }
+  },
+  "portfolio": {
+    "title": "Client",
+    "highlight": "Portfolio",
+    "description": "Top brands have trusted us to bring their ideas to life. Each project reflects a relationship of trust, creativity, and commitment that drives us forward."
+  },
+  "about": {
+    "title": "About",
+    "highlight": "Incolors",
+    "description": "We provide creative and innovative solutions to enhance the visual identity of brands and businesses. Through personalized products and impactful advertising material, we aim to create a memorable connection between our clients and their audiences.",
+    "mission": {
+      "title": "Mission",
+      "text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence."
+    },
+    "vision": {
+      "title": "Vision",
+      "text": "To be recognized as Venezuela’s leading company in POP material and creative customization."
+    },
+    "values": {
+      "title": "Values",
+      "text": "Creativity, responsibility, excellence, commitment, honesty, and customer focus."
+    }
+  },
+  "services": {
+    "title": "Our",
+    "highlight": "Services",
+    "description": "We create visual, printed, and digital solutions to help your company connect with its audience and stand out in the market.",
+    "branding": {
+      "title": "Brand Design",
+      "description": "We create logos, visual identity, and branding that reflect your company’s essence."
+    },
+    "pop": {
+      "title": "POP Material",
+      "description": "We design and print labels, banners, packaging, and displays that boost your sales."
+    },
+    "corporate": {
+      "title": "Corporate Products",
+      "description": "We develop personalized products like notebooks and boxes to boost your image."
+    },
+    "digital": {
+      "title": "Digital Marketing",
+      "description": "Creative strategies for social media, campaigns, and brand positioning."
+    },
+    "editorial": {
+      "title": "Editorial Design",
+      "description": "We design brochures, magazines, catalogs, and impactful corporate presentations."
+    },
+    "events": {
+      "title": "Stands & Events",
+      "description": "We design backings, stands, and signage to promote your brand at trade shows."
+    }
+  },
+  "testimonials": {
+    "title": "What our",
+    "highlight": "clients say",
+    "description": "Real feedback from companies that have trusted us with their digital projects.",
+    "mariana": {
+      "title": "Student",
+      "comment": "Incolors helped me with my thesis by providing insight into their PET plastic recycling process used in 3D printing."
+    },
+    "carlos": {
+      "title": "Director, TechSolutions",
+      "comment": "Incolors perfectly understood our needs and delivered a corporate site that exceeded expectations."
+    },
+    "laura": {
+      "title": "Manager, TaskMaster",
+      "comment": "The mobile app developed by Incolors has been key to boosting our team's productivity. Great job!"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "highlight": "Today",
+    "subtitle": "We’re ready to help you with your creative and corporate projects.",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Write your message...",
+    "submit_button": "Send Message"
+  },
+  "footer": {
+    "quick_links": "Quick Links",
+    "services": "Services",
+    "subscribe": "Subscribe",
+    "subscribe_text": "Get the latest news and special offers.",
+    "privacy_notice": "Privacy Notice",
+    "legal": "All content and images on this site are intellectual property of Incolors."
+  },
+  "social": {
+    "follow_us": "Follow us on",
+    "on_social": "Social Media",
+    "description": "Stay connected with our latest updates, launches, and exclusive promotions."
+  }
+}

@@ -2,80 +2,80 @@
 const products = [
   {
     id: 1,
-    name: "Vaso térmico personalizado",
+    nameKey: "products.thermal_mug.name",
+    descriptionKey: "products.thermal_mug.description",
     category: "vasos",
-    image: "https://via.placeholder.com/300x200?text=Vaso+Termico",
-    description: "Vaso térmico de acero inoxidable con impresión a color."
+    image: "https://via.placeholder.com/300x200?text=Vaso+Termico"
   },
   {
     id: 2,
-    name: "Franelas corporativas",
+    nameKey: "products.corporate_shirt.name",
+    descriptionKey: "products.corporate_shirt.description",
     category: "franelas",
-    image: "https://via.placeholder.com/300x200?text=Franelas",
-    description: "Franelas en algodón con logo bordado o sublimado."
+    image: "https://via.placeholder.com/300x200?text=Franelas"
   },
   {
     id: 3,
-    name: "Stands POP",
+    nameKey: "products.pop_stand.name",
+    descriptionKey: "products.pop_stand.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Stand+POP",
-    description: "Estructuras plegables para activaciones de marca."
+    image: "https://via.placeholder.com/300x200?text=Stand+POP"
   },
   {
     id: 4,
-    name: "Vaso plástico promocional",
+    nameKey: "products.plastic_cup.name",
+    descriptionKey: "products.plastic_cup.description",
     category: "vasos",
-    image: "https://via.placeholder.com/300x200?text=Vaso+Plastico",
-    description: "Vaso plástico económico ideal para giveaways."
+    image: "https://via.placeholder.com/300x200?text=Vaso+Plastico"
   },
   {
     id: 5,
-    name: "Banner roll-up",
+    nameKey: "products.banner.name",
+    descriptionKey: "products.banner.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Banner",
-    description: "Pendón auto-armable para exhibiciones."
+    image: "https://via.placeholder.com/300x200?text=Banner"
   },
   {
     id: 6,
-    name: "Franelas deportivas",
+    nameKey: "products.sport_shirt.name",
+    descriptionKey: "products.sport_shirt.description",
     category: "franelas",
-    image: "https://via.placeholder.com/300x200?text=Franelas+Deportivas",
-    description: "Poliéster transpirable con estampado personalizado."
+    image: "https://via.placeholder.com/300x200?text=Franelas+Deportivas"
   },
   {
     id: 7,
-    name: "Lanyard corporativo",
+    nameKey: "products.corporate_lanyard.name",
+    descriptionKey: "products.corporate_lanyard.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Lanyard+Corporativo",
-    description: "Lanyard personalizado con impresión corporativa."
+    image: "https://via.placeholder.com/300x200?text=Lanyard+Corporativo"
   },
   {
     id: 8,
-    name: "Llavero tipo lanyard",
+    nameKey: "products.lanyard_keychain.name",
+    descriptionKey: "products.lanyard_keychain.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Llavero+Lanyard",
-    description: "Llavero con cinta tipo lanyard ideal para promociones."
+    image: "https://via.placeholder.com/300x200?text=Llavero+Lanyard"
   },
   {
     id: 9,
-    name: "Taza corporativa",
+    nameKey: "products.mug.name",
+    descriptionKey: "products.mug.description",
     category: "vasos",
-    image: "https://via.placeholder.com/300x200?text=Taza+Corporativa",
-    description: "Taza de cerámica con logotipo personalizado."
+    image: "https://via.placeholder.com/300x200?text=Taza+Corporativa"
   },
   {
     id: 10,
-    name: "Power Bank",
+    nameKey: "products.powerbank.name",
+    descriptionKey: "products.powerbank.description",
     category: "tech",
-    image: "https://via.placeholder.com/300x200?text=Power+Bank",
-    description: "Cargador portátil con logo impreso."
+    image: "https://via.placeholder.com/300x200?text=Power+Bank"
   },
   {
     id: 11,
-    name: "Cable multifuncion",
+    nameKey: "products.multi_cable.name",
+    descriptionKey: "products.multi_cable.description",
     category: "tech",
-    image: "https://via.placeholder.com/300x200?text=Cable+Multifuncion",
-    description: "Cable con múltiples conectores USB para promociones tecnológicas."
+    image: "https://via.placeholder.com/300x200?text=Cable+Multifuncion"
   }
 ];
 

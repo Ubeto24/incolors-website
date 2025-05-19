@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from './LanguageSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const handleLinkClick = () => {
     setIsOpen(false);
@@ -28,25 +31,33 @@ export default function Navbar() {
         </button>
 
         {/* Menú para pantallas grandes */}
-        <div className="hidden md:flex space-x-8">
-          <a href="#home" className="nav-link text-gray-800 hover:text-indigo-600">Inicio</a>
-          <a href="#services" className="nav-link text-gray-800 hover:text-indigo-600">Servicios</a>
-          <a href="#portfolio" className="nav-link text-gray-800 hover:text-indigo-600">Portafolio</a>
-          <a href="#about" className="nav-link text-gray-800 hover:text-indigo-600">Nosotros</a>
-          <a href="#contact" className="nav-link text-gray-800 hover:text-indigo-600">Contacto</a>
-          <Link to="/catalogo" className="nav-link text-gray-800 hover:text-indigo-600">Catálogo</Link>
+        <div className="hidden md:flex space-x-8 items-center">
+          <a href="#home" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.home')}</a>
+          <a href="#services" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.services')}</a>
+          <a href="#portfolio" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.portfolio')}</a>
+          <a href="#about" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.about')}</a>
+          <a href="#contact" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.contact')}</a>
+          <Link to="/catalogo" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.catalog')}</Link>
+
+          <div className="ml-4">
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
 
       {/* Menú desplegable para móviles */}
       {isOpen && (
         <div className="md:hidden px-6 pb-4 bg-white shadow">
-          <a onClick={handleLinkClick} href="#home" className="block py-2 text-gray-800">Inicio</a>
-          <a onClick={handleLinkClick} href="#services" className="block py-2 text-gray-800">Servicios</a>
-          <a onClick={handleLinkClick} href="#portfolio" className="block py-2 text-gray-800">Portafolio</a>
-          <a onClick={handleLinkClick} href="#about" className="block py-2 text-gray-800">Nosotros</a>
-          <a onClick={handleLinkClick} href="#contact" className="block py-2 text-gray-800">Contacto</a>
-          <Link to="/catalogo" onClick={handleLinkClick} className="block py-2 text-gray-800">Catálogo</Link>
+          <a onClick={handleLinkClick} href="#home" className="block py-2 text-gray-800">{t('nav.home')}</a>
+          <a onClick={handleLinkClick} href="#services" className="block py-2 text-gray-800">{t('nav.services')}</a>
+          <a onClick={handleLinkClick} href="#portfolio" className="block py-2 text-gray-800">{t('nav.portfolio')}</a>
+          <a onClick={handleLinkClick} href="#about" className="block py-2 text-gray-800">{t('nav.about')}</a>
+          <a onClick={handleLinkClick} href="#contact" className="block py-2 text-gray-800">{t('nav.contact')}</a>
+          <Link to="/catalogo" onClick={handleLinkClick} className="block py-2 text-gray-800">{t('nav.catalog')}</Link>
+
+          <div className="mt-4">
+            <LanguageSwitcher />
+          </div>
         </div>
       )}
     </nav>

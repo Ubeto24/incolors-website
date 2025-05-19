@@ -3,62 +3,64 @@
     "home": "Início",
     "services": "Serviços",
     "portfolio": "Portfólio",
-    "about": "Sobre nós",
+    "about": "Sobre Nós",
     "contact": "Contato",
     "catalog": "Catálogo"
   },
   "hero": {
     "title": "Impulsionamos marcas com ",
     "highlight": "criatividade",
-    "subtitle": "Projetamos e produzimos produtos corporativos e promocionais que conectam com seus clientes e elevam sua marca. Seu parceiro criativo de confiança.",
+    "subtitle": "Desenhamos e produzimos produtos corporativos e promocionais que conectam com os seus clientes e elevam o valor da sua marca. O seu parceiro criativo de confiança.",
     "contact_button": "Fale Conosco",
-    "portfolio_button": "Ver Projetos"
+    "portfolio_button": "Ver Trabalhos",
+    "cta_contact": "Fale Conosco",
+    "cta_portfolio": "Ver Portfólio"
   },
   "products": {
     "section_title": "Produtos em Destaque",
-    "section_description": "Conecte-se com seus clientes por meio de produtos promocionais funcionais e memoráveis. Descubra nossas totebags, lanyards, bonés, powerbanks, canecas e pulseiras personalizadas.",
+    "section_description": "Conecte-se com os seus clientes através de produtos promocionais funcionais e memoráveis. Descubra as nossas totebags, lanyards, bonés, powerbanks, canecas e pulseiras corporativas.",
     "catalog_button": "Ver catálogo completo",
     "totebag": {
       "title": "Totebag Corporativa",
-      "description": "Bolsas tipo tote personalizadas com seu logotipo, ideais para eventos e kits promocionais."
+      "description": "Sacos tipo tote personalizados com o seu logótipo, ideais para eventos e kits promocionais."
     },
     "lanyard": {
       "title": "Lanyard Corporativo",
-      "description": "Cordões personalizados para crachás, ideais para uso interno e eventos."
+      "description": "Cordões porta-crachá personalizados para uso interno e eventos."
     },
     "cap": {
       "title": "Bonés Promocionais",
-      "description": "Bonés bordados ou sublimados com o logotipo da sua empresa."
+      "description": "Bonés com bordado ou sublimação do logótipo da sua empresa."
     },
     "powerbank": {
       "title": "Powerbank Personalizado",
-      "description": "Baterias portáteis com sua marca, ideais como brinde corporativo."
+      "description": "Baterias portáteis com a sua marca, úteis como brindes corporativos."
     },
     "mug": {
       "title": "Caneca Corporativa",
-      "description": "Canecas personalizadas ideais para brindes internos ou presentes empresariais."
+      "description": "Canecas personalizadas ideais para branding interno ou presentes empresariais."
     },
     "bracelet": {
       "title": "Pulseira Corporativa",
-      "description": "Pulseiras elásticas personalizadas com o nome ou logotipo da sua empresa."
+      "description": "Pulseiras elásticas personalizadas com o nome ou logótipo da sua empresa."
     }
   },
   "portfolio": {
     "title": "Portfólio de",
     "highlight": "Clientes",
-    "description": "Grandes marcas confiaram em nós para dar vida às suas ideias. Cada projeto representa uma relação de confiança, criatividade e compromisso que nos impulsiona a continuar crescendo."
+    "description": "Grandes marcas confiaram em nós para dar vida às suas ideias. Cada projeto representa uma relação de confiança, criatividade e compromisso que nos impulsiona a crescer."
   },
   "about": {
     "title": "Sobre",
     "highlight": "Incolors",
-    "description": "Oferecemos soluções criativas e inovadoras para fortalecer a identidade visual de marcas e empresas. Através de produtos personalizados e material publicitário de impacto, criamos conexões memoráveis entre nossos clientes e seu público.",
+    "description": "Dedicamo-nos a oferecer soluções criativas e inovadoras para reforçar a identidade visual de marcas e empreendimentos. Através de produtos personalizados e material publicitário impactante, procuramos gerar uma ligação memorável com o seu público.",
     "mission": {
       "title": "Missão",
-      "text": "Oferecer produtos promocionais personalizados de alta qualidade que fortaleçam a identidade e presença da marca dos nossos clientes."
+      "text": "Fornecer produtos promocionais personalizados de alta qualidade que fortaleçam a identidade e presença da marca dos nossos clientes."
     },
     "vision": {
       "title": "Visão",
-      "text": "Ser reconhecida como a empresa líder na Venezuela em material POP e personalização criativa."
+      "text": "Ser reconhecida como a empresa líder na Venezuela em soluções de material POP e personalização criativa."
     },
     "values": {
       "title": "Valores",
@@ -68,18 +70,18 @@
   "services": {
     "title": "Nossos",
     "highlight": "Serviços",
-    "description": "Criamos soluções visuais, impressas e digitais que ajudam sua empresa a se conectar com os clientes e se destacar no mercado.",
+    "description": "Criamos soluções visuais, impressas e digitais que ajudam a sua empresa a conectar com os clientes e a destacar-se no mercado.",
     "branding": {
       "title": "Design de Marca",
-      "description": "Criamos logotipos, identidade visual e branding que refletem a essência da sua empresa."
+      "description": "Criamos logótipos, identidade visual e branding que refletem a essência da sua empresa."
     },
     "pop": {
       "title": "Material POP",
-      "description": "Desenhamos e imprimimos etiquetas, banners, embalagens e expositores que impulsionam suas vendas."
+      "description": "Desenhamos e imprimimos etiquetas, banners, embalagens e expositores que impulsionam as suas vendas."
     },
     "corporate": {
       "title": "Produto Corporativo",
-      "description": "Desenvolvemos produtos personalizados como agendas, cadernos e caixas para fortalecer sua imagem."
+      "description": "Desenvolvemos produtos personalizados como agendas, cadernos e caixas para fortalecer a sua imagem."
     },
     "digital": {
       "title": "Marketing Digital",
@@ -87,46 +89,60 @@
     },
     "editorial": {
       "title": "Design Editorial",
-      "description": "Editamos panfletos, revistas, catálogos e apresentações corporativas impactantes."
+      "description": "Editamos brochuras, revistas, catálogos e apresentações corporativas de alto impacto."
     },
     "events": {
       "title": "Stands e Eventos",
-      "description": "Desenhamos backings, estandes e sinalização para promover sua marca em feiras."
+      "description": "Desenhamos backdrops, stands e sinalética para promover a sua marca em feiras e exposições."
     }
   },
   "testimonials": {
     "title": "O que dizem",
-    "highlight": "nossos clientes",
-    "description": "Depoimentos reais de empresas que confiaram em nós para seus projetos digitais.",
+    "highlight": "os nossos clientes",
+    "description": "Depoimentos reais de empresas que confiaram em nós para os seus projetos digitais.",
     "mariana": {
       "title": "Estudante",
-      "comment": "A Incolors me ajudou no desenvolvimento da minha tese, fornecendo informações sobre sua linha de reciclagem de plástico PET usada na impressão 3D."
+      "comment": "A Incolors ajudou-me no desenvolvimento da minha tese ao permitir estudar a sua linha de reciclagem de plástico PET utilizada nos processos de impressão 3D."
     },
     "carlos": {
       "title": "Diretor, TechSolutions",
-      "comment": "A equipe da Incolors entendeu perfeitamente nossas necessidades e entregou um site corporativo que superou todas as expectativas."
+      "comment": "A equipa da Incolors entendeu perfeitamente as nossas necessidades e entregou um site corporativo que superou todas as expectativas."
     },
     "laura": {
-      "title": "Gerente, TaskMaster",
-      "comment": "O aplicativo móvel desenvolvido pela Incolors foi fundamental para aumentar a produtividade da nossa equipe. Excelente trabalho!"
+      "title": "Gestora, TaskMaster",
+      "comment": "A aplicação móvel desenvolvida pela Incolors foi fundamental para melhorar a produtividade da nossa equipa. Excelente trabalho!"
     }
   },
   "contact": {
     "title": "Fale Conosco",
     "highlight": "Hoje",
-    "subtitle": "Estamos prontos para ajudá-lo com seus projetos criativos e corporativos.",
+    "subtitle": "Estamos prontos para ajudar nos seus projetos criativos e corporativos.",
     "name_placeholder": "Nome",
     "email_placeholder": "Email",
-    "message_placeholder": "Escreva sua mensagem...",
-    "submit_button": "Enviar Mensagem"
+    "message_placeholder": "Escreva a sua mensagem...",
+    "submit_button": "Enviar Mensagem",
+    "info_title": "Informações de contato",
+    "address": "Carrizal, San Antonio de los Altos",
+    "phone": "Telefone",
+    "whatsapp": "WhatsApp",
+    "whatsapp_link": "Fale conosco pelo WhatsApp"
   },
   "footer": {
     "quick_links": "Links Rápidos",
     "services": "Serviços",
-    "subscribe": "Assine",
+    "subscribe": "Subscrever",
     "subscribe_text": "Receba as últimas novidades e ofertas especiais.",
+    "email_placeholder": "O seu email",
+    "description": "Criamos soluções visuais, impressas e digitais que conectam a sua marca com as pessoas.",
     "privacy_notice": "Aviso de Privacidade",
-    "legal": "Todo o conteúdo e imagens deste site são propriedade intelectual da Incolors."
+    "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
+    "privacy": "Aviso de Privacidade",
+    "brand_design": "Design de Marca",
+    "pop_material": "Material POP",
+    "corporate_product": "Produto Corporativo",
+    "digital_marketing": "Marketing Digital",
+    "editorial_design": "Design Editorial",
+    "stands_events": "Stands e Eventos"
   },
   "social": {
     "follow_us": "Siga-nos nas",

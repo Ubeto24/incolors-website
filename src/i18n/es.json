@@ -12,38 +12,12 @@
     "highlight": "creatividad",
     "subtitle": "Diseñamos y producimos productos corporativos y publicitarios que conectan con tus clientes y elevan tu marca. Somos tu aliado creativo de confianza.",
     "contact_button": "Contáctanos",
-    "portfolio_button": "Ver trabajos",
-    "cta_contact": "Contáctanos",
-    "cta_portfolio": "Ver portafolio"
+    "portfolio_button": "Ver trabajos"
   },
   "products": {
     "section_title": "Productos Destacados",
     "section_description": "Conecta con tus clientes a través de productos promocionales funcionales y memorables. Descubre nuestras totebags, lanyards, gorras, powerbanks, tazas y pulseras corporativas.",
-    "catalog_button": "Ver catálogo completo",
-    "totebag": {
-      "title": "Totebag Corporativa",
-      "description": "Bolsos tipo tote personalizados con tu logo, ideales para eventos y kits promocionales."
-    },
-    "lanyard": {
-      "title": "Lanyard Corporativo",
-      "description": "Cintas porta credenciales con diseño personalizado para uso interno y eventos."
-    },
-    "cap": {
-      "title": "Gorras Promocionales",
-      "description": "Gorras bordadas o sublimadas con el logo de tu empresa."
-    },
-    "powerbank": {
-      "title": "Powerbank Personalizado",
-      "description": "Baterías portátiles con tu marca, funcionales y útiles como regalo corporativo."
-    },
-    "mug": {
-      "title": "Taza Corporativa",
-      "description": "Tazas personalizadas ideales para branding interno o regalos empresariales."
-    },
-    "bracelet": {
-      "title": "Pulsera Elástica Corporativa",
-      "description": "Pulseras elásticas personalizadas con el nombre o logo de tu empresa."
-    }
+    "catalog_button": "Ver catálogo completo"
   },
   "portfolio": {
     "title": "Portafolio de",
@@ -54,18 +28,12 @@
     "title": "Sobre",
     "highlight": "Incolors",
     "description": "Nos dedicamos a ofrecer soluciones creativas e innovadoras para potenciar la identidad visual de marcas y emprendimientos. A través de productos personalizados y material publicitario impactante, buscamos generar una conexión memorable entre nuestros clientes y su audiencia.",
-    "mission": {
-      "title": "Misión",
-      "text": "Brindar productos publicitarios personalizados de alta calidad que impulsen la identidad y presencia de marca de nuestros clientes."
-    },
-    "vision": {
-      "title": "Visión",
-      "text": "Ser reconocidos como la empresa líder en Venezuela en soluciones de material POP y personalización creativa."
-    },
-    "values": {
-      "title": "Valores",
-      "text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
-    }
+    "mission_title": "Misión",
+    "mission_text": "Brindar productos publicitarios personalizados de alta calidad que impulsen la identidad y presencia de marca de nuestros clientes.",
+    "vision_title": "Visión",
+    "vision_text": "Ser reconocidos como la empresa líder en Venezuela en soluciones de material POP y personalización creativa.",
+    "values_title": "Valores",
+    "values_text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
   },
   "services": {
     "title": "Nuestros",
@@ -116,33 +84,28 @@
   "contact": {
     "title": "Contáctanos",
     "highlight": "Hoy",
-    "subtitle": "Estamos listos para ayudarte en tus proyectos creativos y corporativos.",
+    "description": "Estamos listos para ayudarte en tus proyectos creativos y corporativos.",
+    "info_title": "Información de contacto",
+    "address": "Carrizal, San Antonio de los Altos",
+    "phone": "+58 424-1888534",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "whatsapp_link": "https://wa.me/584241888534",
     "name_placeholder": "Nombre",
     "email_placeholder": "Correo",
     "message_placeholder": "Escribe tu mensaje...",
-    "submit_button": "Enviar mensaje",
-    "info_title": "Información de contacto",
-    "address": "Carrizal, San Antonio de los Altos",
-    "phone": "Teléfono",
-    "whatsapp": "WhatsApp",
-    "whatsapp_link": "Escríbenos por WhatsApp"
+    "submit_button": "Enviar mensaje"
   },
   "footer": {
+    "description": "Creamos soluciones visuales, impresas y digitales que conectan tu marca con las personas.",
     "quick_links": "Enlaces rápidos",
     "services": "Servicios",
     "subscribe": "Suscríbete",
     "subscribe_text": "Recibe las últimas noticias y ofertas especiales.",
-    "email_placeholder": "Tu correo electrónico",
-    "description": "Creamos soluciones visuales, impresas y digitales que conectan tu marca con las personas.",
+    "email_placeholder": "Tu email",
     "privacy_notice": "Aviso de privacidad",
+    "legal": "Todo el contenido, imágenes, diseños y elementos gráficos presentes en este sitio son propiedad intelectual de Incolors.",
     "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
-    "privacy": "Aviso de privacidad",
-    "brand_design": "Diseño de Marca",
-    "pop_material": "Material POP",
-    "corporate_product": "Producto Corporativo",
-    "digital_marketing": "Marketing Digital",
-    "editorial_design": "Diseño Editorial",
-    "stands_events": "Stands y Eventos"
+    "privacy": "Aviso de privacidad"
   },
   "social": {
     "follow_us": "Síguenos en",

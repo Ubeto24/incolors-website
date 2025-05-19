@@ -12,7 +12,9 @@
     "highlight": "creativity",
     "subtitle": "We design and produce corporate and promotional products that connect with your customers and elevate your brand. Your creative partner you can trust.",
     "contact_button": "Contact Us",
-    "portfolio_button": "See Work"
+    "portfolio_button": "See Work",
+    "cta_contact": "Contact Us",
+    "cta_portfolio": "View Portfolio"
   },
   "products": {
     "section_title": "Featured Products",
@@ -118,15 +120,29 @@
     "name_placeholder": "Name",
     "email_placeholder": "Email",
     "message_placeholder": "Write your message...",
-    "submit_button": "Send Message"
+    "submit_button": "Send Message",
+    "info_title": "Contact Information",
+    "address": "Carrizal, San Antonio de los Altos",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "whatsapp_link": "Message us on WhatsApp"
   },
   "footer": {
     "quick_links": "Quick Links",
     "services": "Services",
     "subscribe": "Subscribe",
     "subscribe_text": "Get the latest news and special offers.",
+    "email_placeholder": "Your email",
+    "description": "We create visual, printed and digital solutions that connect your brand with people.",
     "privacy_notice": "Privacy Notice",
-    "legal": "All content and images on this site are intellectual property of Incolors."
+    "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
+    "privacy": "Privacy Notice",
+    "brand_design": "Brand Design",
+    "pop_material": "POP Material",
+    "corporate_product": "Corporate Product",
+    "digital_marketing": "Digital Marketing",
+    "editorial_design": "Editorial Design",
+    "stands_events": "Stands & Events"
   },
   "social": {
     "follow_us": "Follow us on",

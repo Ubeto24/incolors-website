@@ -12,12 +12,38 @@
     "highlight": "creatividad",
     "subtitle": "Diseñamos y producimos productos corporativos y publicitarios que conectan con tus clientes y elevan tu marca. Somos tu aliado creativo de confianza.",
     "contact_button": "Contáctanos",
-    "portfolio_button": "Ver trabajos"
+    "portfolio_button": "Ver trabajos",
+    "cta_contact": "Contáctanos",
+    "cta_portfolio": "Ver portafolio"
   },
   "products": {
     "section_title": "Productos Destacados",
     "section_description": "Conecta con tus clientes a través de productos promocionales funcionales y memorables. Descubre nuestras totebags, lanyards, gorras, powerbanks, tazas y pulseras corporativas.",
-    "catalog_button": "Ver catálogo completo"
+    "catalog_button": "Ver catálogo completo",
+    "totebag": {
+      "title": "Totebag Corporativa",
+      "description": "Bolsos tipo tote personalizados con tu logo, ideales para eventos y kits promocionales."
+    },
+    "lanyard": {
+      "title": "Lanyard Corporativo",
+      "description": "Cintas porta credenciales con diseño personalizado para uso interno y eventos."
+    },
+    "cap": {
+      "title": "Gorras Promocionales",
+      "description": "Gorras bordadas o sublimadas con el logo de tu empresa."
+    },
+    "powerbank": {
+      "title": "Powerbank Personalizado",
+      "description": "Baterías portátiles con tu marca, funcionales y útiles como regalo corporativo."
+    },
+    "mug": {
+      "title": "Taza Corporativa",
+      "description": "Tazas personalizadas ideales para branding interno o regalos empresariales."
+    },
+    "bracelet": {
+      "title": "Pulsera Elástica Corporativa",
+      "description": "Pulseras elásticas personalizadas con el nombre o logo de tu empresa."
+    }
   },
   "portfolio": {
     "title": "Portafolio de",
@@ -84,7 +110,8 @@
   "contact": {
     "title": "Contáctanos",
     "highlight": "Hoy",
-    "description": "Estamos listos para ayudarte en tus proyectos creativos y corporativos.",
+    "subtitle": "Estamos listos para ayudarte en tus proyectos creativos y corporativos.",
+    "description": "Envía tu mensaje",
     "info_title": "Información de contacto",
     "address": "Carrizal, San Antonio de los Altos",
     "phone": "+58 424-1888534",
@@ -96,16 +123,21 @@
     "submit_button": "Enviar mensaje"
   },
   "footer": {
-    "description": "Creamos soluciones visuales, impresas y digitales que conectan tu marca con las personas.",
     "quick_links": "Enlaces rápidos",
     "services": "Servicios",
     "subscribe": "Suscríbete",
     "subscribe_text": "Recibe las últimas noticias y ofertas especiales.",
-    "email_placeholder": "Tu email",
+    "email_placeholder": "Tu correo electrónico",
+    "description": "Creamos soluciones visuales, impresas y digitales que conectan tu marca con las personas.",
     "privacy_notice": "Aviso de privacidad",
-    "legal": "Todo el contenido, imágenes, diseños y elementos gráficos presentes en este sitio son propiedad intelectual de Incolors.",
     "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
-    "privacy": "Aviso de privacidad"
+    "privacy": "Aviso de privacidad",
+    "brand_design": "Diseño de Marca",
+    "pop_material": "Material POP",
+    "corporate_product": "Producto Corporativo",
+    "digital_marketing": "Marketing Digital",
+    "editorial_design": "Diseño Editorial",
+    "stands_events": "Stands y Eventos"
   },
   "social": {
     "follow_us": "Síguenos en",

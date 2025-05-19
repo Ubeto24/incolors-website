@@ -14,7 +14,7 @@
     "contact_button": "Contact Us",
     "portfolio_button": "See Work",
     "cta_contact": "Contact Us",
-    "cta_portfolio": "View Portfolio"
+    "cta_portfolio": "See Portfolio"
   },
   "products": {
     "section_title": "Featured Products",
@@ -51,6 +51,9 @@
     "description": "Top brands have trusted us to bring their ideas to life. Each project reflects a relationship of trust, creativity, and commitment that drives us forward."
   },
   "about": {
+    "title": "About",
+    "highlight": "Incolors",
+    "description": "We provide creative and innovative solutions to enhance the visual identity of brands and businesses. Through personalized products and impactful advertising material, we aim to create a memorable connection between our clients and their audiences.",
     "mission_title": "Mission",
     "mission_text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence.",
     "vision_title": "Vision",
@@ -107,14 +110,14 @@
   "contact": {
     "title": "Contact Us",
     "highlight": "Today",
-    "subtitle": "We’re ready to help you with your creative and corporate projects.",
+    "description": "We’re ready to help you with your creative and corporate projects.",
     "name_placeholder": "Name",
     "email_placeholder": "Email",
     "message_placeholder": "Write your message...",
     "submit_button": "Send Message",
     "info_title": "Contact Information",
     "address": "Carrizal, San Antonio de los Altos",
-    "phone": "Phone",
+    "phone": "+58 424-1888534",
     "whatsapp": "WhatsApp",
     "whatsapp_link": "Message us on WhatsApp"
   },
@@ -126,6 +129,7 @@
     "email_placeholder": "Your email",
     "description": "We create visual, printed and digital solutions that connect your brand with people.",
     "privacy_notice": "Privacy Notice",
+    "legal": "All content, images, designs and graphic elements on this site are intellectual property of Incolors.",
     "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
     "privacy": "Privacy Notice",
     "brand_design": "Brand Design",

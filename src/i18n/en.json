@@ -111,15 +111,15 @@
     "title": "Contact Us",
     "highlight": "Today",
     "description": "We’re ready to help you with your creative and corporate projects.",
-    "name_placeholder": "Name",
-    "email_placeholder": "Email",
-    "message_placeholder": "Write your message...",
-    "submit_button": "Send Message",
     "info_title": "Contact Information",
     "address": "Carrizal, San Antonio de los Altos",
     "phone": "+58 424-1888534",
     "whatsapp": "WhatsApp",
-    "whatsapp_link": "Message us on WhatsApp"
+    "whatsapp_link": "Message us on WhatsApp",
+    "name_placeholder": "Your name",
+    "email_placeholder": "Your email",
+    "message_placeholder": "Write your message...",
+    "submit_button": "Send Message"
   },
   "footer": {
     "quick_links": "Quick Links",

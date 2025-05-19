@@ -54,12 +54,18 @@
     "title": "Sobre",
     "highlight": "Incolors",
     "description": "Nos dedicamos a ofrecer soluciones creativas e innovadoras para potenciar la identidad visual de marcas y emprendimientos. A través de productos personalizados y material publicitario impactante, buscamos generar una conexión memorable entre nuestros clientes y su audiencia.",
-    "mission_title": "Misión",
-    "mission_text": "Brindar productos publicitarios personalizados de alta calidad que impulsen la identidad y presencia de marca de nuestros clientes.",
-    "vision_title": "Visión",
-    "vision_text": "Ser reconocidos como la empresa líder en Venezuela en soluciones de material POP y personalización creativa.",
-    "values_title": "Valores",
-    "values_text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
+    "mission": {
+      "title": "Misión",
+      "text": "Brindar productos publicitarios personalizados de alta calidad que impulsen la identidad y presencia de marca de nuestros clientes."
+    },
+    "vision": {
+      "title": "Visión",
+      "text": "Ser reconocidos como la empresa líder en Venezuela en soluciones de material POP y personalización creativa."
+    },
+    "values": {
+      "title": "Valores",
+      "text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
+    }
   },
   "services": {
     "title": "Nuestros",
@@ -110,7 +116,6 @@
   "contact": {
     "title": "Contáctanos",
     "highlight": "Hoy",
-    "subtitle": "Estamos listos para ayudarte en tus proyectos creativos y corporativos.",
     "description": "Envía tu mensaje",
     "info_title": "Información de contacto",
     "address": "Carrizal, San Antonio de los Altos",
@@ -118,9 +123,13 @@
     "whatsapp": "Escríbenos por WhatsApp",
     "whatsapp_link": "https://wa.me/584241888534",
     "name_placeholder": "Nombre",
-    "email_placeholder": "Correo",
+    "email_placeholder": "Correo electrónico",
     "message_placeholder": "Escribe tu mensaje...",
-    "submit_button": "Enviar mensaje"
+    "submit_button": "Enviar mensaje",
+    "placeholder_name": "Nombre",
+    "placeholder_email": "Correo electrónico",
+    "placeholder_message": "Escribe tu mensaje...",
+    "button": "Enviar mensaje"
   },
   "footer": {
     "quick_links": "Enlaces rápidos",

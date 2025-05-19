@@ -11,6 +11,10 @@ i18n
   .use(initReactI18next) // ✅ Integración con React
   .init({
     fallbackLng: 'es', // ✅ Español como idioma por defecto
+    detection: {
+      // 🚫 Desactiva el uso de localStorage y sessionStorage
+      caches: []
+    },
     resources: {
       es: { translation: es },
       en: { translation: en },

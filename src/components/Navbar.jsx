@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
-  };
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
+    return () => (document.body.style.overflow = 'auto');
+  }, [isOpen]);
+
+  const handleLinkClick = () => setIsOpen(false);
 
   return (
     <nav className="fixed w-full bg-white shadow-md z-50">
@@ -21,7 +24,6 @@ export default function Navbar() {
           <span className="ml-3 text-xl font-semibold text-gray-800">Incolors</span>
         </Link>
 
-        {/* Botón hamburguesa */}
         <button
           className="md:hidden text-gray-800 focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
@@ -30,7 +32,6 @@ export default function Navbar() {
           <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
         </button>
 
-        {/* Menú para pantallas grandes */}
         <div className="hidden md:flex space-x-8 items-center">
           <a href="#home" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.home')}</a>
           <a href="#services" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.services')}</a>
@@ -45,17 +46,16 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Menú desplegable para móviles */}
       {isOpen && (
-        <div className="md:hidden px-6 pb-4 bg-white shadow">
-          <a onClick={handleLinkClick} href="#home" className="block py-2 text-gray-800">{t('nav.home')}</a>
-          <a onClick={handleLinkClick} href="#services" className="block py-2 text-gray-800">{t('nav.services')}</a>
-          <a onClick={handleLinkClick} href="#portfolio" className="block py-2 text-gray-800">{t('nav.portfolio')}</a>
-          <a onClick={handleLinkClick} href="#about" className="block py-2 text-gray-800">{t('nav.about')}</a>
-          <a onClick={handleLinkClick} href="#contact" className="block py-2 text-gray-800">{t('nav.contact')}</a>
-          <Link to="/catalogo" onClick={handleLinkClick} className="block py-2 text-gray-800">{t('nav.catalog')}</Link>
+        <div className="fixed inset-0 bg-white z-40 flex flex-col px-6 pt-6 pb-8 shadow-xl animate-slide-in overflow-y-auto">
+          <a onClick={handleLinkClick} href="#home" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.home')}</a>
+          <a onClick={handleLinkClick} href="#services" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.services')}</a>
+          <a onClick={handleLinkClick} href="#portfolio" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.portfolio')}</a>
+          <a onClick={handleLinkClick} href="#about" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.about')}</a>
+          <a onClick={handleLinkClick} href="#contact" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.contact')}</a>
+          <Link onClick={handleLinkClick} to="/catalogo" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.catalog')}</Link>
 
-          <div className="mt-4">
+          <div className="mt-6">
             <LanguageSwitcher />
           </div>
         </div>

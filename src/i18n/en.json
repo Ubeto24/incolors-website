@@ -51,21 +51,12 @@
     "description": "Top brands have trusted us to bring their ideas to life. Each project reflects a relationship of trust, creativity, and commitment that drives us forward."
   },
   "about": {
-    "title": "About",
-    "highlight": "Incolors",
-    "description": "We provide creative and innovative solutions to enhance the visual identity of brands and businesses. Through personalized products and impactful advertising material, we aim to create a memorable connection between our clients and their audiences.",
-    "mission": {
-      "title": "Mission",
-      "text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence."
-    },
-    "vision": {
-      "title": "Vision",
-      "text": "To be recognized as Venezuela’s leading company in POP material and creative customization."
-    },
-    "values": {
-      "title": "Values",
-      "text": "Creativity, responsibility, excellence, commitment, honesty, and customer focus."
-    }
+    "mission_title": "Mission",
+    "mission_text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence.",
+    "vision_title": "Vision",
+    "vision_text": "To be recognized as Venezuela’s leading company in POP material and creative customization.",
+    "values_title": "Values",
+    "values_text": "Creativity, responsibility, excellence, commitment, honesty, and customer focus."
   },
   "services": {
     "title": "Our",

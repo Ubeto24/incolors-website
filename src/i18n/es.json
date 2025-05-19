@@ -12,7 +12,9 @@
     "highlight": "creatividad",
     "subtitle": "Diseñamos y producimos productos corporativos y publicitarios que conectan con tus clientes y elevan tu marca. Somos tu aliado creativo de confianza.",
     "contact_button": "Contáctanos",
-    "portfolio_button": "Ver trabajos"
+    "portfolio_button": "Ver trabajos",
+    "cta_contact": "Contáctanos",
+    "cta_portfolio": "Ver portafolio"
   },
   "products": {
     "section_title": "Productos Destacados",
@@ -118,15 +120,29 @@
     "name_placeholder": "Nombre",
     "email_placeholder": "Correo",
     "message_placeholder": "Escribe tu mensaje...",
-    "submit_button": "Enviar mensaje"
+    "submit_button": "Enviar mensaje",
+    "info_title": "Información de contacto",
+    "address": "Carrizal, San Antonio de los Altos",
+    "phone": "Teléfono",
+    "whatsapp": "WhatsApp",
+    "whatsapp_link": "Escríbenos por WhatsApp"
   },
   "footer": {
     "quick_links": "Enlaces rápidos",
     "services": "Servicios",
     "subscribe": "Suscríbete",
     "subscribe_text": "Recibe las últimas noticias y ofertas especiales.",
+    "email_placeholder": "Tu correo electrónico",
+    "description": "Creamos soluciones visuales, impresas y digitales que conectan tu marca con las personas.",
     "privacy_notice": "Aviso de privacidad",
-    "legal": "Todo el contenido, imágenes, diseños y elementos gráficos presentes en este sitio son propiedad intelectual de Incolors."
+    "copyright": "© 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC",
+    "privacy": "Aviso de privacidad",
+    "brand_design": "Diseño de Marca",
+    "pop_material": "Material POP",
+    "corporate_product": "Producto Corporativo",
+    "digital_marketing": "Marketing Digital",
+    "editorial_design": "Diseño Editorial",
+    "stands_events": "Stands y Eventos"
   },
   "social": {
     "follow_us": "Síguenos en",

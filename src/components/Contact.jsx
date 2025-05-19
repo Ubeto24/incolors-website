@@ -26,7 +26,7 @@ export default function Contact() {
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            {t('contact.title')} <span className="text-yellow-300">{t('contact.today')}</span>
+            {t('contact.title')} <span className="text-yellow-300">{t('contact.highlight')}</span>
           </h2>
           <div className="w-20 h-1 bg-white mx-auto mb-6"></div>
           <p className="text-white max-w-2xl mx-auto">
@@ -64,21 +64,21 @@ export default function Contact() {
               <input
                 type="text"
                 name="name"
-                placeholder={t('contact.placeholder_name')}
+                placeholder={t('contact.name_placeholder')}
                 required
                 className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none placeholder-gray-500"
               />
               <input
                 type="email"
                 name="email"
-                placeholder={t('contact.placeholder_email')}
+                placeholder={t('contact.email_placeholder')}
                 required
                 className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none placeholder-gray-500"
               />
             </div>
             <textarea
               name="message"
-              placeholder={t('contact.placeholder_message')}
+              placeholder={t('contact.message_placeholder')}
               required
               className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none placeholder-gray-500"
             />
@@ -89,7 +89,7 @@ export default function Contact() {
               type="submit"
               className="w-full bg-indigo-600 text-white py-3 rounded hover:bg-indigo-700 transition"
             >
-              {t('contact.button')}
+              {t('contact.submit_button')}
             </button>
           </form>
         </div>

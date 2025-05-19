@@ -1,65 +1,70 @@
-import React, { useState, useEffect } from 'react';
+// src/components/Navbar.jsx
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import LanguageSwitcher from './LanguageSwitcher';
 import { useTranslation } from 'react-i18next';
+import { Menu, X } from 'lucide-react';
 
 export default function Navbar() {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  const { t } = useTranslation();
 
-  useEffect(() => {
-    document.body.style.overflow = isOpen ? 'hidden' : 'auto';
-    return () => (document.body.style.overflow = 'auto');
-  }, [isOpen]);
-
-  const handleLinkClick = () => setIsOpen(false);
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    setIsOpen(false); // Cierra menú al cambiar idioma
+  };
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-50">
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="flex items-center" onClick={handleLinkClick}>
-          <div className="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 flex items-center justify-center text-white font-bold text-xl">
+    <header className="bg-white shadow-md fixed w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+        {/* Logo */}
+        <div className="flex items-center space-x-2">
+          <div className="bg-gradient-to-r from-purple-400 to-indigo-600 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center">
             IC
           </div>
-          <span className="ml-3 text-xl font-semibold text-gray-800">Incolors</span>
-        </Link>
-
-        <button
-          className="md:hidden text-gray-800 focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-          aria-label="Toggle menu"
-        >
-          <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
-        </button>
-
-        <div className="hidden md:flex space-x-8 items-center">
-          <a href="#home" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.home')}</a>
-          <a href="#services" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.services')}</a>
-          <a href="#portfolio" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.portfolio')}</a>
-          <a href="#about" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.about')}</a>
-          <a href="#contact" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.contact')}</a>
-          <Link to="/catalogo" className="nav-link text-gray-800 hover:text-indigo-600">{t('nav.catalog')}</Link>
-
-          <div className="ml-4">
-            <LanguageSwitcher />
-          </div>
+          <h1 className="text-xl font-semibold text-gray-800">Incolors</h1>
         </div>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-6 items-center">
+          <a href="#home" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.home')}</a>
+          <a href="#services" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.services')}</a>
+          <a href="#portfolio" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.portfolio')}</a>
+          <a href="#about" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.about')}</a>
+          <a href="#contact" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.contact')}</a>
+          <Link to="/catalogo" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.catalog')}</Link>
+
+          {/* Language Selector */}
+          <div className="flex space-x-2 ml-4">
+            <button onClick={() => changeLanguage('es')} className="text-xl">🇻🇪</button>
+            <button onClick={() => changeLanguage('en')} className="text-xl">🇺🇸</button>
+            <button onClick={() => changeLanguage('pt')} className="text-xl">🇵🇹</button>
+          </div>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button onClick={() => setIsOpen(!isOpen)} className="md:hidden text-gray-700 focus:outline-none">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
 
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
-        <div className="fixed inset-0 bg-white z-40 flex flex-col px-6 pt-6 pb-8 shadow-xl animate-slide-in overflow-y-auto">
-          <a onClick={handleLinkClick} href="#home" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.home')}</a>
-          <a onClick={handleLinkClick} href="#services" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.services')}</a>
-          <a onClick={handleLinkClick} href="#portfolio" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.portfolio')}</a>
-          <a onClick={handleLinkClick} href="#about" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.about')}</a>
-          <a onClick={handleLinkClick} href="#contact" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.contact')}</a>
-          <Link onClick={handleLinkClick} to="/catalogo" className="py-3 border-b border-gray-200 text-lg font-medium">{t('nav.catalog')}</Link>
+        <nav className="md:hidden absolute top-full left-0 w-full bg-white px-6 py-4 shadow-lg space-y-4">
+          <a href="#home" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.home')}</a>
+          <a href="#services" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.services')}</a>
+          <a href="#portfolio" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.portfolio')}</a>
+          <a href="#about" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.about')}</a>
+          <a href="#contact" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.contact')}</a>
+          <Link to="/catalogo" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.catalog')}</Link>
 
-          <div className="mt-6">
-            <LanguageSwitcher />
+          {/* Idiomas móvil */}
+          <div className="flex space-x-3 pt-3 border-t border-gray-200">
+            <button onClick={() => changeLanguage('es')} className="text-xl">🇻🇪</button>
+            <button onClick={() => changeLanguage('en')} className="text-xl">🇺🇸</button>
+            <button onClick={() => changeLanguage('pt')} className="text-xl">🇵🇹</button>
           </div>
-        </div>
+        </nav>
       )}
-    </nav>
+    </header>
   );
 }

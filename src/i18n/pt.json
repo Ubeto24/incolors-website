@@ -143,5 +143,20 @@
     "follow_us": "Siga-nos nas",
     "on_social": "Redes Sociais",
     "description": "Fique por dentro das nossas novidades, lançamentos e promoções exclusivas."
+  },
+  "privacy": {
+    "title": "Política de Privacidade",
+    "intro": "Na Incolors, estamos comprometidos em proteger suas informações pessoais. Esta política explica como coletamos, usamos e protegemos seus dados.",
+    "section1_title": "1. Informações que coletamos",
+    "section1_text": "Coletamos informações que você fornece diretamente, como nome, e-mail e mensagem ao usar nosso formulário de contato.",
+    "section2_title": "2. Uso das informações",
+    "section2_text": "Usamos suas informações para responder às suas solicitações, melhorar nossos serviços e nos comunicar com você sobre novidades ou promoções.",
+    "section3_title": "3. Compartilhamento de informações",
+    "section3_text": "Não compartilhamos suas informações pessoais com terceiros, exceto quando necessário para cumprir obrigações legais.",
+    "section4_title": "4. Segurança dos dados",
+    "section4_text": "Implementamos medidas de segurança para proteger suas informações contra acesso ou divulgação não autorizados.",
+    "section5_title": "5. Seus direitos",
+    "section5_text": "Você pode solicitar acesso, correção ou exclusão de seus dados pessoais a qualquer momento entrando em contato conosco.",
+    "footer": "Se você tiver dúvidas sobre nossa política de privacidade, entre em contato conosco através do nosso formulário."
   }
 }

@@ -42,7 +42,7 @@
     },
     "bracelet": {
       "title": "Corporate Wristband",
-      "description": "Elastic wristbands personalized with your company’s name or logo."
+      "description": "Elastic wristbands personalized with your company's name or logo."
     }
   },
   "portfolio": {
@@ -54,10 +54,10 @@
     "title": "About",
     "highlight": "Incolors",
     "description": "We provide creative and innovative solutions to enhance the visual identity of brands and businesses. Through personalized products and impactful advertising material, we aim to create a memorable connection between our clients and their audiences.",
-    "about.mission_title": "Mission",
-    "about.mission_text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence.",
+    "mission_title": "Mission",
+    "mission_text": "To provide high-quality personalized promotional products that enhance our clients' brand identity and presence.",
     "vision_title": "Vision",
-    "vision_text": "To be recognized as Venezuela’s leading company in POP material and creative customization.",
+    "vision_text": "To be recognized as Venezuela's leading company in POP material and creative customization.",
     "values_title": "Values",
     "values_text": "Creativity, responsibility, excellence, commitment, honesty, and customer focus."
   },
@@ -67,7 +67,7 @@
     "description": "We create visual, printed, and digital solutions to help your company connect with its audience and stand out in the market.",
     "branding": {
       "title": "Brand Design",
-      "description": "We create logos, visual identity, and branding that reflect your company’s essence."
+      "description": "We create logos, visual identity, and branding that reflect your company's essence."
     },
     "pop": {
       "title": "POP Material",
@@ -110,7 +110,7 @@
   "contact": {
     "title": "Contact Us",
     "highlight": "Today",
-    "description": "We’re ready to help you with your creative and corporate projects.",
+    "description": "We're ready to help you with your creative and corporate projects.",
     "info_title": "Contact Information",
     "address": "Carrizal, San Antonio de los Altos",
     "phone": "+58 424-1888534",
@@ -143,5 +143,20 @@
     "follow_us": "Follow us on",
     "on_social": "Social Media",
     "description": "Stay connected with our latest updates, launches, and exclusive promotions."
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "At Incolors, we are committed to protecting your personal information. This policy explains how we collect, use, and protect your data.",
+    "section1_title": "1. Information We Collect",
+    "section1_text": "We collect information you provide directly, such as your name, email, and message when you use our contact form.",
+    "section2_title": "2. Use of Information",
+    "section2_text": "We use your information to respond to your inquiries, improve our services, and communicate with you about news or promotions.",
+    "section3_title": "3. Sharing Information",
+    "section3_text": "We do not share your personal information with third parties unless required to comply with legal obligations.",
+    "section4_title": "4. Data Security",
+    "section4_text": "We implement security measures to protect your information from unauthorized access or disclosure.",
+    "section5_title": "5. Your Rights",
+    "section5_text": "You may request access, correction, or deletion of your personal data at any time by contacting us.",
+    "footer": "If you have questions about our privacy policy, please contact us through our form."
   }
 }

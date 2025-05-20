@@ -65,7 +65,13 @@
     "values": {
       "title": "Valores",
       "text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
-    }
+    },
+    "mission_title": "Misión",
+    "mission_text": "Brindar productos publicitarios personalizados de alta calidad que impulsen la identidad y presencia de marca de nuestros clientes.",
+    "vision_title": "Visión",
+    "vision_text": "Ser reconocidos como la empresa líder en Venezuela en soluciones de material POP y personalización creativa.",
+    "values_title": "Valores",
+    "values_text": "Creatividad, responsabilidad, excelencia, compromiso, honestidad y orientación al cliente."
   },
   "services": {
     "title": "Nuestros",
@@ -152,5 +158,20 @@
     "follow_us": "Síguenos en",
     "on_social": "Redes Sociales",
     "description": "Mantente conectado con nuestras últimas novedades, lanzamientos y promociones exclusivas."
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "intro": "En Incolors nos comprometemos a proteger tu información personal. Esta política explica cómo recopilamos, usamos y protegemos tus datos.",
+    "section1_title": "1. Información que recopilamos",
+    "section1_text": "Recopilamos información que nos proporcionas directamente, como tu nombre, correo electrónico y mensaje cuando usas nuestro formulario de contacto.",
+    "section2_title": "2. Uso de la información",
+    "section2_text": "Utilizamos tu información para responder a tus consultas, mejorar nuestros servicios y comunicarnos contigo sobre novedades o promociones.",
+    "section3_title": "3. Compartir información",
+    "section3_text": "No compartimos tu información personal con terceros, salvo que sea necesario para cumplir con obligaciones legales.",
+    "section4_title": "4. Seguridad de los datos",
+    "section4_text": "Implementamos medidas de seguridad para proteger tu información contra accesos no autorizados o divulgación.",
+    "section5_title": "5. Tus derechos",
+    "section5_text": "Puedes solicitar acceso, corrección o eliminación de tus datos personales en cualquier momento contactándonos.",
+    "footer": "Si tienes preguntas sobre nuestra política de privacidad, contáctanos a través de nuestro formulario."
   }
 }

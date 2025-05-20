@@ -173,5 +173,12 @@
     "section5_title": "5. Tus derechos",
     "section5_text": "Puedes solicitar acceso, corrección o eliminación de tus datos personales en cualquier momento contactándonos.",
     "footer": "Si tienes preguntas sobre nuestra política de privacidad, contáctanos a través de nuestro formulario."
+  },
+  "catalog": {
+    "title": "Catálogo de",
+    "highlight": "Productos",
+    "subtitle": "Explora nuestra variedad de productos personalizados.",
+    "back_home": "Volver al inicio",
+    "all": "Todos"
   }
 }

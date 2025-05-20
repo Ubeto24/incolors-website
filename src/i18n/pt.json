@@ -158,5 +158,12 @@
     "section5_title": "5. Seus direitos",
     "section5_text": "Você pode solicitar acesso, correção ou exclusão de seus dados pessoais a qualquer momento entrando em contato conosco.",
     "footer": "Se você tiver dúvidas sobre nossa política de privacidade, entre em contato conosco através do nosso formulário."
+  },
+  "catalog": {
+    "title": "Catálogo de",
+    "highlight": "Produtos",
+    "subtitle": "Explore nossa variedade de produtos personalizados.",
+    "back_home": "Voltar ao início",
+    "all": "Todos"
   }
 }

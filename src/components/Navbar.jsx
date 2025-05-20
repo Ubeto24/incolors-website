@@ -18,9 +18,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="bg-gradient-to-r from-purple-400 to-indigo-600 text-white font-bold rounded-full w-10 h-10 flex items-center justify-center">
-            IC
-          </div>
+          <img src="/logo-incolors.png" alt="Incolors logo" className="w-10 h-10 object-contain" />
           <h1 className="text-xl font-semibold text-gray-800">Incolors</h1>
         </div>
 

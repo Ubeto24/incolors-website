@@ -164,6 +164,8 @@
     "highlight": "Products",
     "subtitle": "Explore our variety of personalized products.",
     "back_home": "Back to home",
-    "all": "All"
+    "all": "All",
+    "prev": "Previous",
+    "next": "Next"
   }
 }

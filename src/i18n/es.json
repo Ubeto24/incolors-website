@@ -179,6 +179,8 @@
     "highlight": "Productos",
     "subtitle": "Explora nuestra variedad de productos personalizados.",
     "back_home": "Volver al inicio",
-    "all": "Todos"
+    "all": "Todos",
+    "prev": "Anterior",
+    "next": "Siguiente"
   }
 }

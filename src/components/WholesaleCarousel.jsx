@@ -1,5 +1,5 @@
 import React from 'react';
-import { useKeenSlider } from 'keen-slider/react';
+import { useKeenSlider } from 'keen-slider';
 import 'keen-slider/keen-slider.min.css';
 import wholesaleProducts from '../data/wholesaleProducts';
 import { useTranslation } from 'react-i18next';

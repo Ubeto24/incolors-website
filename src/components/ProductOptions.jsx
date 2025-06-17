@@ -9,32 +9,32 @@ export default function ProductOptions() {
     {
       title: t('products.totebag.title'),
       description: t('products.totebag.description'),
-      image: 'https://i.ibb.co/9T2tN74/totebag.png',
+      image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&h=300&fit=crop',
     },
     {
       title: t('products.lanyard.title'),
       description: t('products.lanyard.description'),
-      image: 'https://i.ibb.co/KpDBwpDW/image.png',
+      image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop',
     },
     {
       title: t('products.cap.title'),
       description: t('products.cap.description'),
-      image: 'https://i.ibb.co/nm4btQx/gorra.png',
+      image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400&h=300&fit=crop',
     },
     {
       title: t('products.powerbank.title'),
       description: t('products.powerbank.description'),
-      image: 'https://i.ibb.co/P6D3pD3/powerbank.png',
+      image: 'https://images.unsplash.com/photo-1609592806598-ef9b1c2c8b0c?w=400&h=300&fit=crop',
     },
     {
       title: t('products.mug.title'),
       description: t('products.mug.description'),
-      image: 'https://i.ibb.co/LdSfZP7C/image.png',
+      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
     },
     {
       title: t('products.bracelet.title'),
       description: t('products.bracelet.description'),
-      image: 'https://i.ibb.co/zZ6NfNg/pulsera.png',
+      image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=400&h=300&fit=crop',
     },
   ];
 

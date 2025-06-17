@@ -30,6 +30,9 @@ export default function Navbar() {
           <a href="#about" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.about')}</a>
           <a href="#contact" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.contact')}</a>
           <Link to="/catalogo" className="text-gray-700 hover:text-indigo-600 nav-link">{t('nav.catalog')}</Link>
+          {i18n.language === 'en' && (
+            <Link to="/wholesale" className="text-gray-700 hover:text-indigo-600 nav-link font-bold">Wholesale</Link>
+          )}
 
           {/* Language Selector */}
           <div className="flex space-x-2 ml-4">

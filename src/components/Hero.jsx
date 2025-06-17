@@ -41,8 +41,8 @@ export default function Hero() {
           {/* Columna derecha: imagen */}
           <div className="md:w-1/2 flex justify-center">
             <img
-              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
-              alt="Material POP"
+              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
+              alt="Productos publicitarios Incolors"
               className="rounded-xl shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg animate-float"
             />
           </div>

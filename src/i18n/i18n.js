@@ -10,7 +10,7 @@ i18n
   .use(LanguageDetector) // ✅ Detecta idioma del navegador
   .use(initReactI18next) // ✅ Integración con React
   .init({
-    fallbackLng: 'es', // ✅ Español como idioma por defecto
+    fallbackLng: 'en', // ✅ Inglés como idioma por defecto
     detection: {
       // 🚫 Desactiva el uso de localStorage y sessionStorage
       caches: []

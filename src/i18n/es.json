@@ -182,5 +182,10 @@
     "all": "Todos",
     "prev": "Anterior",
     "next": "Siguiente"
+  },
+  "notfound": {
+    "title": "Página no encontrada",
+    "description": "Lo sentimos, la página que buscas no existe o fue movida.",
+    "back_home": "Volver al inicio"
   }
 }

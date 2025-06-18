@@ -24,12 +24,12 @@ export default function ProductOptions() {
     {
       title: t('products.powerbank.title'),
       description: t('products.powerbank.description'),
-      image: 'https://images.unsplash.com/photo-1609592806598-ef9b1c2c8b0c?w=400&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1603791440384-56cd371ee9a7',
     },
     {
       title: t('products.mug.title'),
       description: t('products.mug.description'),
-      image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop',
+      image: 'https://images.unsplash.com/photo-1524594154900-03831c5b9ec2',
     },
     {
       title: t('products.bracelet.title'),

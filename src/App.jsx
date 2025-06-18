@@ -15,7 +15,7 @@ import Gracias from './pages/Gracias';
 import Privacidad from './pages/Privacidad';
 import { motion } from 'framer-motion';
 import AnimatedLanguageWrapper from './components/AnimatedLanguageWrapper'; // ✅ NUEVO
-import Wholesale from './components/Wholesale';
+import WholesalePage from './pages/WholesalePage';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
@@ -49,7 +49,7 @@ export default function App() {
           />
           <Route path="/gracias" element={<Gracias />} />
           <Route path="/privacidad" element={<Privacidad />} />
-          <Route path="/wholesale" element={<Wholesale />} />
+          <Route path="/wholesale" element={<WholesalePage />} />
         </Routes>
       </AnimatedLanguageWrapper>
 

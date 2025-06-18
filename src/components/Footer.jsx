@@ -69,7 +69,7 @@ export default function Footer() {
       {/* Línea inferior */}
       <div className="border-t border-gray-700 mt-10 pt-6 px-6 text-sm text-gray-500 flex flex-col md:flex-row justify-between items-center gap-3">
         <div className="text-center md:text-left">
-          © 2025 Incolors Estudio Creativo C.A. • Incolors Global Trade LLC
+          © 2025 Incolors Estudio Creativo C.A. • Incolors Group LLC
         </div>
         <div className="text-center md:text-right">
           <Link to="/privacidad" className="hover:underline">{t('footer.privacy')}</Link>

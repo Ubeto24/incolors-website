@@ -57,6 +57,9 @@ export default function Navbar() {
           <a href="#about" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.about')}</a>
           <a href="#contact" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.contact')}</a>
           <Link to="/catalogo" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600">{t('nav.catalog')}</Link>
+          {i18n.language === 'en' && (
+            <Link to="/wholesale" onClick={() => setIsOpen(false)} className="block text-gray-700 hover:text-indigo-600 font-bold">Wholesale</Link>
+          )}
 
           {/* Idiomas móvil */}
           <div className="flex space-x-3 pt-3 border-t border-gray-200">

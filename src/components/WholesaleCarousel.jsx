@@ -1,26 +1,37 @@
-import React from 'react';
-import { useKeenSlider } from 'keen-slider';
-import 'keen-slider/keen-slider.min.css';
+import React, { useCallback, useEffect, useState } from 'react';
+import useEmblaCarousel from 'embla-carousel-react';
 import wholesaleProducts from '../data/wholesaleProducts';
 import { useTranslation } from 'react-i18next';
 
 export default function WholesaleCarousel() {
   const { i18n } = useTranslation();
-  // Solo mostrar si el idioma es inglés
   if (i18n.language !== 'en') return null;
 
-  const [sliderRef] = useKeenSlider({
+  const [emblaRef, emblaApi] = useEmblaCarousel({
     loop: true,
-    mode: 'snap',
-    slides: {
-      perView: 3,
-      spacing: 16,
-    },
+    align: 'start',
+    slidesToScroll: 1,
+    dragFree: false,
     breakpoints: {
-      '(max-width: 1024px)': { perView: 2 },
-      '(max-width: 640px)': { perView: 1 },
+      '(max-width: 1024px)': { slidesToScroll: 1 },
+      '(max-width: 640px)': { slidesToScroll: 1 },
     },
   });
+  const [canScrollPrev, setCanScrollPrev] = useState(false);
+  const [canScrollNext, setCanScrollNext] = useState(false);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setCanScrollPrev(emblaApi.canScrollPrev());
+    setCanScrollNext(emblaApi.canScrollNext());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    emblaApi.on('select', onSelect);
+    onSelect();
+    return () => emblaApi.off('select', onSelect);
+  }, [emblaApi, onSelect]);
 
   return (
     <div className="mt-12">
@@ -28,28 +39,47 @@ export default function WholesaleCarousel() {
       <p className="text-center text-gray-600 mb-8 max-w-2xl mx-auto">
         We offer bulk-ready OEM products, ideal for resellers, brands, and fulfillment partners. Inquire today for MOQ and customization.
       </p>
-      <div ref={sliderRef} className="keen-slider">
-        {wholesaleProducts.map(product => (
-          <div key={product.id} className="keen-slider__slide flex justify-center">
-            <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition p-4 flex flex-col items-center text-center w-72">
-              <img
-                src={product.imageUrl}
-                alt={product.title}
-                className="w-32 h-32 object-cover rounded mb-4 border"
-                loading="lazy"
-              />
-              <h3 className="font-semibold text-base mb-1 text-gray-800">{product.title}</h3>
-              <div className="text-xs text-indigo-600 font-semibold mb-2">{product.category.toUpperCase()}</div>
-              <div className="text-lg font-bold text-indigo-700 mb-1">{product.pricePerCase}</div>
-              <div className="text-sm text-gray-500 mb-3">{product.unitPrice}</div>
-              {product.soldOut ? (
-                <button className="bg-gray-300 text-gray-500 px-4 py-2 rounded-full font-semibold cursor-not-allowed" disabled>SOLD OUT</button>
-              ) : (
-                <button className="bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition">ADD TO CART</button>
-              )}
-            </div>
+      <div className="relative">
+        <div className="overflow-hidden" ref={emblaRef}>
+          <div className="flex gap-6">
+            {wholesaleProducts.map(product => (
+              <div key={product.id} className="min-w-[280px] max-w-xs flex-shrink-0 bg-white rounded-xl shadow-md hover:shadow-lg transition p-4 flex flex-col items-center text-center">
+                <img
+                  src={product.imageUrl}
+                  alt={product.title}
+                  className="w-32 h-32 object-cover rounded mb-4 border"
+                  loading="lazy"
+                />
+                <h3 className="font-semibold text-base mb-1 text-gray-800">{product.title}</h3>
+                <div className="text-xs text-indigo-600 font-semibold mb-2">{product.category.toUpperCase()}</div>
+                <div className="text-lg font-bold text-indigo-700 mb-1">{product.pricePerCase}</div>
+                <div className="text-sm text-gray-500 mb-3">{product.unitPrice}</div>
+                {product.soldOut ? (
+                  <button className="bg-gray-300 text-gray-500 px-4 py-2 rounded-full font-semibold cursor-not-allowed" disabled>SOLD OUT</button>
+                ) : (
+                  <button className="bg-indigo-600 text-white px-4 py-2 rounded-full font-semibold hover:bg-indigo-700 transition">ADD TO CART</button>
+                )}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+        {/* Flechas de navegación */}
+        <button
+          className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-100 transition disabled:opacity-30"
+          onClick={() => emblaApi && emblaApi.scrollPrev()}
+          disabled={!canScrollPrev}
+          aria-label="Previous"
+        >
+          <span className="text-xl">&#8592;</span>
+        </button>
+        <button
+          className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full p-2 shadow hover:bg-gray-100 transition disabled:opacity-30"
+          onClick={() => emblaApi && emblaApi.scrollNext()}
+          disabled={!canScrollNext}
+          aria-label="Next"
+        >
+          <span className="text-xl">&#8594;</span>
+        </button>
       </div>
     </div>
   );

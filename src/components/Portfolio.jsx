@@ -7,10 +7,10 @@ export default function Portfolio() {
   const projects = [
     { title: 'FruFru', image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop' },
     { title: 'Peregrina', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop' },
-    { title: 'Flor de Aragua', image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop' },
+    { title: 'Flor de Aragua', image: '/assets/flor-de-aragua.png' },
     { title: 'Tijerazo', image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop' },
     { title: 'Holy Chicken', image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&h=300&fit=crop' },
-    { title: 'Beco', image: 'https://images.unsplash.com/photo-1521369909029-2afed882baee?w=400&h=300&fit=crop' }
+    { title: 'Taza Corporativa', image: '/assets/taza-corporativa.png' }
   ];
 
   return (

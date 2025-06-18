@@ -4,9 +4,4 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  build: {
-    rollupOptions: {
-      external: ['keen-slider', 'keen-slider/keen-slider.min.css', 'keen-slider/react']
-    }
-  }
 });

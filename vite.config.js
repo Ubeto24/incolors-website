@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     rollupOptions: {
-      external: ['keen-slider', 'keen-slider/keen-slider.min.css']
+      external: ['keen-slider', 'keen-slider/keen-slider.min.css', 'keen-slider/react']
     }
   }
 });

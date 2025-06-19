@@ -49,14 +49,14 @@ export default function WholesaleCarousel() {
               let customImage = product.imageUrl;
               let customAlt = product.title;
               if (product.id === 1) {
-                customImage = 'https://images.unsplash.com/photo-1598387844304-c89dd59eae52?fit=crop&w=600&q=80';
-                customAlt = '20oz Skinny Tumbler';
+                customImage = 'https://static.vecteezy.com/system/resources/previews/009/432/871/original/realistic-clean-white-ceramic-mug-and-saucer-isolated-on-transparent-background-png.png';
+                customAlt = 'White Ceramic Mug';
               } else if (product.id === 2) {
                 customImage = 'https://images.unsplash.com/photo-1664998897140-3b967cdd192d?fit=crop&w=600&q=80';
                 customAlt = '16oz Glass Can';
               } else if (product.id === 3) {
-                customImage = 'https://images.unsplash.com/photo-1558959357-685f9e7c9d28?fit=crop&w=600&q=80';
-                customAlt = 'Frosted Glass Mug';
+                customImage = 'https://static.vecteezy.com/system/resources/previews/022/157/002/original/minimalist-modern-transparent-glass-mug-on-white-background-png.png';
+                customAlt = 'Transparent Glass Mug';
               } else if (product.id === 4) {
                 customImage = 'https://images.unsplash.com/photo-1598032894296-721ffbcae6eb?fit=crop&w=600&q=80';
                 customAlt = 'Custom Tote Bags';

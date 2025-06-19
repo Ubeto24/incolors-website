@@ -3,36 +3,36 @@ const wholesaleProducts = [
     id: 1,
     title: '20oz Skinny Tumbler – Case of 25',
     category: 'STAINLESS STEEL',
-    pricePerCase: '450,00 zł',
-    unitPrice: '18,00 zł / unit',
-    imageUrl: 'https://i.ibb.co/Y8F8r6P/skinny-tumbler-20oz.png',
+    pricePerCase: '$450.00 USD',
+    unitPrice: '$18.00 / unit',
+    imageUrl: 'https://source.unsplash.com/400x400/?tumbler,drinkware,corporate',
     soldOut: false
   },
   {
     id: 2,
     title: '16oz Glass Can – Case of 48',
     category: 'SUBLIMATION',
-    pricePerCase: '720,00 zł',
-    unitPrice: '15,00 zł / unit',
-    imageUrl: 'https://i.ibb.co/HVHwLgS/glass-can-16oz.png',
+    pricePerCase: '$720.00 USD',
+    unitPrice: '$15.00 / unit',
+    imageUrl: 'https://source.unsplash.com/400x400/?glass,can,drinkware,business',
     soldOut: false
   },
   {
     id: 3,
     title: 'Frosted Glass Mug – Case of 36',
     category: 'SUBLIMATION',
-    pricePerCase: '540,00 zł',
-    unitPrice: '15,00 zł / unit',
-    imageUrl: 'https://i.ibb.co/Hzq64zQ/frosted-glass-mug.png',
+    pricePerCase: '$540.00 USD',
+    unitPrice: '$15.00 / unit',
+    imageUrl: 'https://source.unsplash.com/400x400/?mug,glass,office',
     soldOut: true
   },
   {
     id: 4,
     title: 'Custom Tote Bags – Case of 50',
     category: 'COTTON',
-    pricePerCase: '1.000,00 zł',
-    unitPrice: '20,00 zł / unit',
-    imageUrl: 'https://i.ibb.co/b3RMZyc/custom-tote-bags.png',
+    pricePerCase: '$1,000.00 USD',
+    unitPrice: '$20.00 / unit',
+    imageUrl: 'https://source.unsplash.com/400x400/?tote,bag,branding',
     soldOut: false
   },
   {

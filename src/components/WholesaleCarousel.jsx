@@ -47,7 +47,7 @@ export default function WholesaleCarousel() {
                 <img
                   src={product.imageUrl}
                   alt={product.title}
-                  className="w-32 h-32 object-cover rounded mb-4 border"
+                  className="w-32 h-32 object-contain rounded mb-4 border mx-auto bg-white"
                   loading="lazy"
                 />
                 <h3 className="font-semibold text-base mb-1 text-gray-800">{product.title}</h3>

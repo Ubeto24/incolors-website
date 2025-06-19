@@ -61,7 +61,7 @@ const products = [
     nameKey: "products.mug.name",
     descriptionKey: "products.mug.description",
     category: "vasos",
-    image: "https://via.placeholder.com/300x200?text=Taza+Corporativa"
+    image: "https://images.unsplash.com/photo-1517685352821-92cf88aee5a5?auto=format&fit=crop&w=400&q=80"
   },
   {
     id: 10,

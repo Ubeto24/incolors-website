@@ -5,7 +5,7 @@ const wholesaleProducts = [
     category: 'STAINLESS STEEL',
     pricePerCase: '450,00 zł',
     unitPrice: '18,00 zł / unit',
-    imageUrl: 'https://cdn.wholesale.mock/skinny20oz.jpg',
+    imageUrl: 'https://i.ibb.co/Y8F8r6P/skinny-tumbler-20oz.png',
     soldOut: false
   },
   {
@@ -14,7 +14,7 @@ const wholesaleProducts = [
     category: 'SUBLIMATION',
     pricePerCase: '720,00 zł',
     unitPrice: '15,00 zł / unit',
-    imageUrl: 'https://cdn.wholesale.mock/glasscan16oz.jpg',
+    imageUrl: 'https://i.ibb.co/HVHwLgS/glass-can-16oz.png',
     soldOut: false
   },
   {
@@ -23,7 +23,7 @@ const wholesaleProducts = [
     category: 'SUBLIMATION',
     pricePerCase: '540,00 zł',
     unitPrice: '15,00 zł / unit',
-    imageUrl: 'https://cdn.wholesale.mock/frostedmug.jpg',
+    imageUrl: 'https://i.ibb.co/Hzq64zQ/frosted-glass-mug.png',
     soldOut: true
   },
   {
@@ -32,7 +32,7 @@ const wholesaleProducts = [
     category: 'COTTON',
     pricePerCase: '1.000,00 zł',
     unitPrice: '20,00 zł / unit',
-    imageUrl: 'https://cdn.wholesale.mock/totebag.jpg',
+    imageUrl: 'https://i.ibb.co/b3RMZyc/custom-tote-bags.png',
     soldOut: false
   },
   {

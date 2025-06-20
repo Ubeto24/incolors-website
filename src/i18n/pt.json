@@ -8,13 +8,14 @@
     "catalog": "Catálogo"
   },
   "hero": {
-    "title": "Impulsionamos marcas com ",
-    "highlight": "criatividade",
-    "subtitle": "Desenhamos e produzimos produtos corporativos e promocionais que conectam com os seus clientes e elevam o valor da sua marca. O seu parceiro criativo de confiança.",
-    "contact_button": "Fale Conosco",
+    "title": "Brindes Corporativos Personalizados e Soluções Atacadistas para Revendedores",
+    "highlight": "",
+    "subtitle": "Ajudamos empresas a crescer com brindes corporativos premium, merchandising personalizado e produtos OEM prontos para distribuição global.",
+    "contact_button": "Solicite um Orçamento B2B",
     "portfolio_button": "Ver Trabalhos",
-    "cta_contact": "Fale Conosco",
-    "cta_portfolio": "Ver Portfólio"
+    "cta_contact": "Solicite um Orçamento B2B",
+    "cta_portfolio": "Ver Portfólio",
+    "cta_quote": "Solicite um Orçamento"
   },
   "products": {
     "section_title": "Produtos em Destaque",
@@ -172,5 +173,9 @@
     "title": "Página não encontrada",
     "description": "Desculpe, a página que você procura não existe ou foi movida.",
     "back_home": "Voltar ao início"
+  },
+  "wholesale": {
+    "title": "Produtos Atacadistas e Private Label para Revendedores e Empresas",
+    "description": "A Incolors oferece preços por volume, personalização de marca própria (private label), parcerias OEM e baixos mínimos de compra (MOQ) para empresas de todo o mundo. Inicie seu programa de revenda hoje com nossa ampla linha de brindes corporativos, produtos promocionais e merchandising personalizado."
   }
 }

@@ -2,10 +2,10 @@
 const products = [
   {
     id: 1,
-    nameKey: "products.thermal_mug.name",
-    descriptionKey: "products.thermal_mug.description",
+    nameKey: "products.totebag.name",
+    descriptionKey: "products.totebag.description",
     category: "vasos",
-    image: "https://via.placeholder.com/300x200?text=Vaso+Termico"
+    image: "/assets/productos_clientes/totebag.png"
   },
   {
     id: 2,
@@ -47,28 +47,28 @@ const products = [
     nameKey: "products.corporate_lanyard.name",
     descriptionKey: "products.corporate_lanyard.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Lanyard+Corporativo"
+    image: "/assets/productos_clientes/lanyard.png"
   },
   {
     id: 8,
-    nameKey: "products.lanyard_keychain.name",
-    descriptionKey: "products.lanyard_keychain.description",
+    nameKey: "products.cap.name",
+    descriptionKey: "products.cap.description",
     category: "material pop",
-    image: "https://via.placeholder.com/300x200?text=Llavero+Lanyard"
+    image: "/assets/productos_clientes/gorra-corporativa.png"
   },
   {
     id: 9,
     nameKey: "products.mug.name",
     descriptionKey: "products.mug.description",
     category: "vasos",
-    image: "https://static.vecteezy.com/system/resources/previews/009/432/871/original/realistic-clean-white-ceramic-mug-and-saucer-isolated-on-transparent-background-png.png"
+    image: "/assets/productos_clientes/taza-incolors.png"
   },
   {
     id: 10,
     nameKey: "products.powerbank.name",
     descriptionKey: "products.powerbank.description",
     category: "tech",
-    image: "https://via.placeholder.com/300x200?text=Power+Bank"
+    image: "/assets/productos_clientes/powerbank.png"
   },
   {
     id: 11,
@@ -76,6 +76,13 @@ const products = [
     descriptionKey: "products.multi_cable.description",
     category: "tech",
     image: "https://via.placeholder.com/300x200?text=Cable+Multifuncion"
+  },
+  {
+    id: 12,
+    nameKey: "products.bracelet.name",
+    descriptionKey: "products.bracelet.description",
+    category: "material pop",
+    image: "/assets/productos_clientes/pulsera-corporativa.png"
   }
 ];
 

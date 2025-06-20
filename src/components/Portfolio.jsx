@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
@@ -5,12 +6,12 @@ export default function Portfolio() {
   const { t } = useTranslation();
 
   const projects = [
-    { title: 'FruFru', image: 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=400&h=300&fit=crop' },
-    { title: 'Peregrina', image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop' },
-    { title: 'Flor de Aragua', image: 'URL_IMAGEN_SERENA_1' },
-    { title: 'Tijerazo', image: 'https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=400&h=300&fit=crop' },
-    { title: 'Holy Chicken', image: 'https://images.unsplash.com/photo-1597481499750-3e6b22637e12?w=400&h=300&fit=crop' },
-    { title: 'Beco', image: 'https://i.imgur.com/TyU4D3N.png' }
+    { title: 'FruFru', image: '/assets/productos_clientes/frufru.png', alt: 'frufru.png' },
+    { title: 'Peregrina', image: '/assets/productos_clientes/peregrina.png', alt: 'peregrina.png' },
+    { title: 'Tijerazo', image: '/assets/productos_clientes/tijerazo.png', alt: 'tijerazo.png' },
+    { title: 'Holy Chicken', image: '/assets/productos_clientes/holychicken.png', alt: 'holychicken.png' },
+    { title: 'Beco', image: '/assets/productos_clientes/beco.png', alt: 'beco.png' },
+    { title: 'Flor de Aragua', image: '/assets/productos_clientes/gorra-flordearagua.png', alt: 'gorra-flordearagua.png' }
   ];
 
   return (
@@ -25,19 +26,21 @@ export default function Portfolio() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-50 rounded-lg overflow-hidden shadow hover:shadow-lg transition duration-300"
+              className="bg-gray-50 rounded-xl overflow-hidden shadow-md hover:shadow-xl transition duration-300"
             >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-800 text-center">{project.title}</h3>
+              <div className="h-72">
+                <img
+                  src={project.image}
+                  alt={project.alt}
+                  className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 text-center">{project.title}</h3>
               </div>
             </div>
           ))}

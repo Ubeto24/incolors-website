@@ -14,7 +14,8 @@
     "contact_button": "Contact Us",
     "portfolio_button": "See Work",
     "cta_contact": "Contact Us",
-    "cta_portfolio": "See Portfolio"
+    "cta_portfolio": "See Portfolio",
+    "cta_quote": "Request a Quote Today"
   },
   "products": {
     "section_title": "Featured Products",
@@ -172,5 +173,9 @@
     "title": "Page Not Found",
     "description": "Sorry, the page you are looking for does not exist or has been moved.",
     "back_home": "Back to Home"
+  },
+  "wholesale": {
+    "title": "Wholesale Products and Private Label for Distributors and Companies",
+    "description": "Incolors offers volume pricing, private label branding, OEM partnerships, and low minimum order quantities (MOQ) for companies worldwide. Start your distributor program today with our wide range of corporate gifts, promotional products, and custom merchandising."
   }
 }

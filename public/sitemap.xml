@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://incolors.biz/</loc>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://incolors.biz/catalogo</loc>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://incolors.biz/gracias</loc>
+    <priority>0.50</priority>
+  </url>
+  <url>
+    <loc>https://incolors.biz/privacidad</loc>
+    <priority>0.40</priority>
+  </url>
+  <url>
+    <loc>https://incolors.biz/wholesale</loc>
+    <priority>0.90</priority>
+  </url>
+</urlset> 

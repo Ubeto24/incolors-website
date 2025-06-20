@@ -1,53 +1,51 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { motion } from 'framer-motion';
 
 export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section
-      id="home"
-      className="hero-clip-path bg-gradient-to-r from-indigo-500 to-purple-600 pt-32 pb-20 md:pt-40 md:pb-32"
-    >
-      <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row items-center">
-          {/* Columna izquierda: texto y botones */}
-          <div className="md:w-1/2 mb-10 md:mb-0 text-center md:text-left">
-            <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6">
-              {t('hero.title')}{' '}
-              <span className="text-yellow-300">{t('hero.highlight')}</span>
-            </h1>
-
-            <p className="text-lg md:text-xl text-gray-100 mb-8">
-              {t('hero.subtitle')}
-            </p>
-
-            <div className="flex flex-col sm:flex-row sm:justify-center md:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <a
-                href="#contact"
-                className="bg-white text-indigo-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300 shadow-lg"
-              >
-                {t('hero.cta_contact')}
-              </a>
-              <a
-                href="#portfolio"
-                className="border-2 border-white text-white hover:bg-white hover:bg-opacity-10 px-8 py-3 rounded-full font-semibold transition duration-300"
-              >
-                {t('hero.cta_portfolio')}
-              </a>
-            </div>
-          </div>
-
-          {/* Columna derecha: imagen */}
-          <div className="md:w-1/2 flex justify-center">
-            <img
-              src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80"
-              alt="Productos publicitarios Incolors"
-              className="rounded-xl shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg animate-float"
-            />
-          </div>
+    <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gradient-to-r from-purple-500 to-indigo-500 min-h-[80vh]">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -20 }}
+        transition={{ duration: 0.5 }}
+        className="text-white max-w-2xl"
+      >
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+          {t("hero.title")}
+        </h1>
+        <p className="text-lg mb-8">{t("hero.subtitle")}</p>
+        <div className="flex flex-col md:flex-row gap-4">
+          <a
+            href="#contact"
+            className="bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-purple-100 transition"
+          >
+            {t("hero.cta_quote")}
+          </a>
+          <a
+            href="#portfolio"
+            className="border-2 border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-600 transition"
+          >
+            {t("hero.cta_portfolio")}
+          </a>
         </div>
-      </div>
+      </motion.div>
+
+      <motion.div
+        className="mt-10 md:mt-0 md:ml-10"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <img
+          src="/productos_clientes/hero-incolors.png"
+          alt="Incolors Hero"
+          className="rounded-xl shadow-lg max-w-sm"
+        />
+      </motion.div>
     </section>
   );
 }

@@ -8,13 +8,14 @@
     "catalog": "Catálogo"
   },
   "hero": {
-    "title": "Impulsamos marcas con ",
-    "highlight": "creatividad",
-    "subtitle": "Diseñamos y producimos productos corporativos y publicitarios que conectan con tus clientes y elevan tu marca. Somos tu aliado creativo de confianza.",
-    "contact_button": "Contáctanos",
+    "title": "Regalos Corporativos Personalizados y Soluciones Mayoristas para Distribuidores",
+    "highlight": "",
+    "subtitle": "Ayudamos a empresas a crecer con regalos corporativos premium, merchandising personalizado y productos OEM al por mayor listos para distribución global.",
+    "contact_button": "Solicita una Cotización B2B",
     "portfolio_button": "Ver trabajos",
-    "cta_contact": "Contáctanos",
-    "cta_portfolio": "Ver portafolio"
+    "cta_contact": "Solicita una Cotización B2B",
+    "cta_portfolio": "Ver portafolio",
+    "cta_quote": "Solicita una Cotización"
   },
   "products": {
     "section_title": "Productos Destacados",
@@ -187,5 +188,9 @@
     "title": "Página no encontrada",
     "description": "Lo sentimos, la página que buscas no existe o fue movida.",
     "back_home": "Volver al inicio"
+  },
+  "wholesale": {
+    "title": "Productos Mayoristas y Private Label para Distribuidores y Empresas",
+    "description": "Incolors ofrece precios por volumen, personalización de marca propia (private label), alianzas OEM y bajos mínimos de compra (MOQ) para empresas de todo el mundo. Comienza tu programa de distribuidor hoy con nuestra amplia gama de regalos corporativos, productos promocionales y merchandising personalizado."
   }
 }

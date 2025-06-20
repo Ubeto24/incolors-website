@@ -3,34 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Incolors</title>
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <title>Incolors | Corporate Gifts, Wholesale & Custom Branded Products</title>
 
-    <!-- Tailwind y estilos personalizados -->
-    <link rel="stylesheet" href="/src/index.css" />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Incolors offers custom corporate gifts, wholesale B2B solutions, private label products, and personalized merchandise. Fast global shipping and flexible MOQ for resellers." />
+    <meta name="keywords" content="corporate gifts supplier, wholesale promotional products, private label products B2B, customized corporate merchandise, branded corporate gifts, OEM products for resellers, bulk promotional items, custom printed company swag" />
+    <meta name="author" content="Incolors Team" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://incolors.biz/" />
 
-    <!-- ✅ Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-      integrity="sha512-yHokU9H4KrV+Z4JY4AwOWDGo5tAPU5WB9r7tzYboqNl9P2GwZ1qfHoS9nF52wHPSZZnUUVB3RBu2c3T9LhDSbw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <!-- Open Graph -->
+    <meta property="og:title" content="Incolors | Corporate Gifts & Wholesale B2B Solutions" />
+    <meta property="og:description" content="Custom corporate gifts, private label products, and wholesale B2B solutions for resellers and distributors worldwide." />
+    <meta property="og:url" content="https://incolors.biz/" />
+    <meta property="og:image" content="https://incolors.biz/assets/productos_clientes/hero-incolors.png" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
 
-    <!-- ✅ Google reCAPTCHA v2 Invisible -->
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Incolors | Corporate Gifts & Wholesale" />
+    <meta name="twitter:description" content="Custom corporate gifts, wholesale products, and B2B solutions." />
+    <meta name="twitter:image" content="https://incolors.biz/assets/productos_clientes/hero-incolors.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+
+    <!-- Structured Data (Schema.org) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Incolors",
+        "url": "https://incolors.biz",
+        "logo": "https://incolors.biz/assets/logo.png",
+        "sameAs": [
+          "https://instagram.com/incolors.vzla",
+          "https://tiktok.com/@incolors.vzla"
+        ]
+      }
+    </script>
+
+    <!-- Sitemap -->
+    <link rel="sitemap" type="application/xml" href="https://incolors.biz/sitemap.xml" />
+
   </head>
+
   <body>
     <div id="root"></div>
 
-    <!-- ✅ Formulario fantasma para Netlify Forms -->
+    <!-- Netlify Forms hidden fallback -->
     <form name="contact" netlify netlify-honeypot="bot-field" hidden>
       <input type="text" name="name" />
       <input type="email" name="email" />
       <textarea name="message"></textarea>
     </form>
 
+    <!-- Main Script (Vite gestionará las rutas de producción automáticamente) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

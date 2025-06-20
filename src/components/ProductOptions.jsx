@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import totebag from '../assets/productos_clientes/totebag.png';
+import lanyard from '../assets/productos_clientes/lanyard.png';
+import gorraCorporativa from '../assets/productos_clientes/gorra-corporativa.png';
+import powerbank from '../assets/productos_clientes/powerbank.png';
+import tazaIncolors from '../assets/productos_clientes/taza-incolors.png';
+import pulseraCorporativa from '../assets/productos_clientes/pulsera corporativa.png';
 
 export default function ProductOptions() {
   const { t } = useTranslation();
@@ -9,32 +15,32 @@ export default function ProductOptions() {
     {
       title: t('products.totebag.title'),
       description: t('products.totebag.description'),
-      image: '/assets/productos_clientes/totebag.png',
+      image: totebag,
     },
     {
       title: t('products.lanyard.title'),
       description: t('products.lanyard.description'),
-      image: '/assets/productos_clientes/lanyard.png',
+      image: lanyard,
     },
     {
       title: t('products.cap.title'),
       description: t('products.cap.description'),
-      image: '/assets/productos_clientes/gorra-corporativa.png',
+      image: gorraCorporativa,
     },
     {
       title: t('products.powerbank.title'),
       description: t('products.powerbank.description'),
-      image: '/assets/productos_clientes/powerbank.png',
+      image: powerbank,
     },
     {
       title: t('products.mug.title'),
       description: t('products.mug.description'),
-      image: '/assets/productos_clientes/taza-incolors.png',
+      image: tazaIncolors,
     },
     {
       title: t('products.bracelet.title'),
       description: t('products.bracelet.description'),
-      image: '/assets/productos_clientes/pulsera-corporativa.png',
+      image: pulseraCorporativa,
     },
   ];
 

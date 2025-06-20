@@ -13,8 +13,12 @@ import { motion } from 'framer-motion';
 import AnimatedLanguageWrapper from './components/AnimatedLanguageWrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
+  const { i18n } = useTranslation();
+  const whatsappNumber = i18n.language === 'en' ? '+17543301430' : '+584241888534';
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -36,7 +40,7 @@ export default function App() {
       </AnimatedLanguageWrapper>
 
       <a
-        href="https://wa.me/+584241888534"
+        href={`https://wa.me/${whatsappNumber}`}
         target="_blank"
         rel="noreferrer"
         className="group fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-10 h-10 md:w-14 md:h-14 flex items-center justify-center rounded-full shadow-lg transition duration-300"

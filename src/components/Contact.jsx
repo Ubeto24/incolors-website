@@ -5,7 +5,10 @@ import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
   const navigate = useNavigate();
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const isEnglish = i18n.language === 'en';
+  const whatsappNumber = isEnglish ? '+17543301430' : '+584241888534';
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,8 +42,16 @@ export default function Contact() {
           <div className="space-y-4">
             <h3 className="text-xl font-bold">{t('contact.info_title')}</h3>
             <p>📍 {t('contact.address')}</p>
-            <p>📞 {t('contact.phone')} <a href="tel:+584241888534" className="text-indigo-600 hover:underline">+58 424-1888534</a></p>
-            <p>📱 {t('contact.whatsapp')} <a href="https://wa.me/+584241888534" target="_blank" rel="noreferrer" className="text-green-600 hover:underline">{t('contact.whatsapp_link')}</a></p>
+
+            {!isEnglish && (
+              <p>📞 {t('contact.phone')} <a href="tel:+584241888534" className="text-indigo-600 hover:underline">+58 424-1888534</a></p>
+            )}
+
+            {isEnglish && (
+              <p>📞 USA Office: <a href="tel:+17543301430" className="text-green-600 hover:underline">+1 754-330-1430</a></p>
+            )}
+
+            <p>📱 WhatsApp: <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noreferrer" className="text-green-600 hover:underline">{whatsappNumber}</a></p>
             <p>📸 Instagram: <a href="https://instagram.com/incolors.vzla" target="_blank" rel="noreferrer" className="text-pink-600 hover:underline">@incolors.vzla</a></p>
             <p>🎵 TikTok: <a href="https://tiktok.com/@incolors.vzla" target="_blank" rel="noreferrer" className="text-black hover:underline">@incolors.vzla</a></p>
           </div>

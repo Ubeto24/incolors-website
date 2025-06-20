@@ -1,17 +1,22 @@
-
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import frufru from '../assets/productos_clientes/frufru.png';
+import peregrina from '../assets/productos_clientes/peregrina.png';
+import tijerazo from '../assets/productos_clientes/tijerazo.png';
+import holychicken from '../assets/productos_clientes/holychicken.png';
+import beco from '../assets/productos_clientes/beco.png';
+import gorraFlorDeAragua from '../assets/productos_clientes/gorra-flordearagua.png';
 
 export default function Portfolio() {
   const { t } = useTranslation();
 
   const projects = [
-    { title: 'FruFru', image: '/assets/productos_clientes/frufru.png', alt: 'frufru.png' },
-    { title: 'Peregrina', image: '/assets/productos_clientes/peregrina.png', alt: 'peregrina.png' },
-    { title: 'Tijerazo', image: '/assets/productos_clientes/tijerazo.png', alt: 'tijerazo.png' },
-    { title: 'Holy Chicken', image: '/assets/productos_clientes/holychicken.png', alt: 'holychicken.png' },
-    { title: 'Beco', image: '/assets/productos_clientes/beco.png', alt: 'beco.png' },
-    { title: 'Flor de Aragua', image: '/assets/productos_clientes/gorra-flordearagua.png', alt: 'gorra-flordearagua.png' }
+    { title: 'FruFru', image: frufru, alt: 'frufru.png' },
+    { title: 'Peregrina', image: peregrina, alt: 'peregrina.png' },
+    { title: 'Tijerazo', image: tijerazo, alt: 'tijerazo.png' },
+    { title: 'Holy Chicken', image: holychicken, alt: 'holychicken.png' },
+    { title: 'Beco', image: beco, alt: 'beco.png' },
+    { title: 'Flor de Aragua', image: gorraFlorDeAragua, alt: 'gorra-flordearagua.png' }
   ];
 
   return (

@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faWhatsapp, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 export default function IncolorsSocialSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const whatsappNumber = i18n.language === 'en' ? '+17543301430' : '+584241888534';
 
   return (
     <section className="py-20 bg-white text-center">
@@ -28,7 +29,7 @@ export default function IncolorsSocialSection() {
           </a>
 
           <a
-            href="https://wa.me/+584241888534"
+            href={`https://wa.me/${whatsappNumber}`}
             target="_blank"
             rel="noreferrer"
             className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white text-2xl hover:scale-105 transition"

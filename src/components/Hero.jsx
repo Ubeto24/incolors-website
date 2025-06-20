@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import heroImage from '../assets/productos_clientes/hero-incolors.png';
 
 export default function Hero() {
   const { t } = useTranslation();
@@ -8,11 +9,11 @@ export default function Hero() {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between p-8 bg-gradient-to-r from-purple-500 to-indigo-500 min-h-[80vh]">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.5 }}
-        className="text-white max-w-2xl"
+        initial={{ opacity: 0, y: 40, scale: 0.95 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0, y: -20, scale: 0.95 }}
+        transition={{ duration: 0.7, type: 'spring', stiffness: 60 }}
+        className="text-white max-w-2xl z-10"
       >
         <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
           {t("hero.title")}
@@ -35,15 +36,18 @@ export default function Hero() {
       </motion.div>
 
       <motion.div
-        className="mt-10 md:mt-0 md:ml-10"
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1 }}
+        className="mt-10 md:mt-0 md:-ml-8 lg:-ml-16 flex-shrink-0 z-0"
+        initial={{ opacity: 0, scale: 0.8, x: 60 }}
+        animate={{ opacity: 1, scale: 1, x: 0 }}
+        transition={{ duration: 1, type: 'spring', bounce: 0.3 }}
       >
-        <img
-          src="/productos_clientes/hero-incolors.png"
+        <motion.img
+          src={heroImage}
           alt="Incolors Hero"
-          className="rounded-xl shadow-lg max-w-sm"
+          className="rounded-xl shadow-lg max-w-md w-[400px] md:w-[440px] lg:w-[500px]"
+          initial={{ scale: 0.95 }}
+          animate={{ scale: [1, 1.04, 1] }}
+          transition={{ repeat: Infinity, duration: 3, ease: 'easeInOut' }}
         />
       </motion.div>
     </section>

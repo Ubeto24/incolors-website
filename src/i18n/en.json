@@ -176,6 +176,13 @@
   },
   "wholesale": {
     "title": "Wholesale Products and Private Label for Distributors and Companies",
-    "description": "Incolors offers volume pricing, private label branding, OEM partnerships, and low minimum order quantities (MOQ) for companies worldwide. Start your distributor program today with our wide range of corporate gifts, promotional products, and custom merchandising."
+    "description": "Incolors offers volume pricing, private label branding, OEM partnerships, and low minimum order quantities (MOQ) for companies worldwide. Start your distributor program today with our wide range of corporate gifts, promotional products, and custom merchandising.",
+    "discount_title": "Bulk Discounts",
+    "discount_text": "Save more when you buy more. Special pricing for large orders.",
+    "private_label_title": "Private Label",
+    "private_label_text": "Brand our products as your own. Perfect for agencies and resellers.",
+    "shipping_title": "Fast Global Shipping",
+    "shipping_text": "We deliver quickly and reliably to your business, wherever you are.",
+    "contact_button": "Contact our B2B Team on WhatsApp"
   }
 }

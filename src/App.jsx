@@ -1,4 +1,6 @@
+// src/App.jsx
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -9,6 +11,10 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import IncolorsSocialSection from './components/IncolorsSocialSection';
+import Gracias from './pages/Gracias';
+import Privacidad from './pages/Privacidad';
+import NotFound404 from './pages/NotFound404';
+import WholesalePage from './pages/WholesalePage';
 import { motion } from 'framer-motion';
 import AnimatedLanguageWrapper from './components/AnimatedLanguageWrapper';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -27,16 +33,29 @@ export default function App() {
       transition={{ duration: 0.5 }}
     >
       <AnimatedLanguageWrapper>
-        <Navbar />
-        <Hero />
-        <Services />
-        <ProductOptions />
-        <Portfolio />
-        <About />
-        <Testimonials />
-        <Contact />
-        <IncolorsSocialSection />
-        <Footer />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
+                <Navbar />
+                <Hero />
+                <Services />
+                <ProductOptions />
+                <Portfolio />
+                <About />
+                <Testimonials />
+                <Contact />
+                <IncolorsSocialSection />
+                <Footer />
+              </>
+            }
+          />
+          <Route path="/wholesale" element={<WholesalePage />} />
+          <Route path="/gracias" element={<Gracias />} />
+          <Route path="/privacidad" element={<Privacidad />} />
+          <Route path="*" element={<NotFound404 />} />
+        </Routes>
       </AnimatedLanguageWrapper>
 
       <a
